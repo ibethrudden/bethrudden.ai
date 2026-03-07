@@ -3,26 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beth Rudden — CEO & Co-Founder, Bast AI</title>
-<meta name="description" content="Beth Rudden builds explainable AI infrastructure. CEO of Bast AI. 50+ patents. Author of AI for the Rest of Us.">
-<meta property="og:title" content="Beth Rudden — CEO & Co-Founder, Bast AI">
-<meta property="og:description" content="Building explainable AI infrastructure that eliminates hallucinations through ontology-grounded reasoning.">
+<title>Beth Rudden — Pioneering Certainty in AI</title>
+<meta name="description" content="Beth Rudden is the CEO & Co-Founder of Bast AI. Former IBM Distinguished Engineer. Author of AI for the Rest of Us. Pioneering Certainty in AI.">
+<meta property="og:title" content="Beth Rudden — Pioneering Certainty in AI">
+<meta property="og:description" content="CEO & Co-Founder of Bast AI. Building AI infrastructure that eliminates hallucinations through ontology-grounded reasoning.">
 <meta property="og:type" content="profile">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bast-blue: #2B7DE9;
-    --bast-dark: #1a1a2e;
-    --bast-gradient-start: #3a8ef6;
-    --bast-gradient-end: #6ec6f8;
-    --text-primary: #1a1a2e;
-    --text-secondary: #555;
-    --text-light: #888;
+    --ink: #1a1a2e;
+    --text: #444;
+    --text-light: #777;
+    --border: #d8dce2;
     --bg: #fafbfc;
     --card-bg: #fff;
-    --card-border: #e8ecf0;
-    --card-hover: #f0f6ff;
+    --accent: #1a1a2e;
+    --accent-hover: #2B7DE9;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,443 +27,365 @@
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
-    color: var(--text-primary);
+    color: var(--ink);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* HERO */
+  /* ── HERO ── */
   .hero {
-    background: linear-gradient(135deg, var(--bast-gradient-start), var(--bast-gradient-end));
-    padding: 3rem 1.5rem 2.5rem;
-    text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.08);
-  }
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.05);
+    padding: 4.5rem 2rem 3.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 2.5px solid var(--ink);
   }
 
-  .hero-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
-
-  .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid rgba(255,255,255,0.9);
-    margin-bottom: 1rem;
-    object-fit: cover;
-    background: rgba(255,255,255,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3rem;
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
   }
 
   .hero h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
     letter-spacing: -0.02em;
-  }
-  .hero .subtitle {
-    font-size: 0.95rem;
-    opacity: 0.9;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-  }
-  .hero .tagline {
-    font-size: 0.85rem;
-    opacity: 0.75;
-    max-width: 440px;
-    margin: 0 auto 1.25rem;
-    line-height: 1.5;
+    line-height: 1.05;
+    margin-bottom: 1rem;
   }
 
-  /* SOCIAL ICONS */
+  .hero .thesis {
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 440px;
+    margin-bottom: 1.75rem;
+  }
+
   .social-row {
     display: flex;
-    gap: 0.75rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    gap: 0.5rem;
   }
   .social-row a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.2);
-    color: white;
+    border: 1.5px solid var(--border);
+    background: transparent;
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: background 0.2s;
+    transition: all 0.2s;
   }
-  .social-row a:hover { background: rgba(255,255,255,0.35); }
-  .social-row a svg { width: 20px; height: 20px; fill: white; }
+  .social-row a:hover {
+    border-color: var(--ink);
+    background: var(--ink);
+  }
+  .social-row a svg { width: 15px; height: 15px; fill: #555; transition: fill 0.2s; }
+  .social-row a:hover svg { fill: #fff; }
 
-  /* MAIN */
-  .main { max-width: 640px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-
-  /* BIO */
-  .bio-section {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
+  /* ── MAIN ── */
+  .main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
   }
 
-  /* SECTION HEADERS */
-  .section-header {
-    font-size: 0.75rem;
+  /* ── SECTION LABEL ── */
+  .section-label {
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
     color: var(--text-light);
-    margin: 1.75rem 0 0.75rem;
-    padding-left: 0.25rem;
+    margin: 2.25rem 0 0.75rem;
   }
+  .section-label:first-child { margin-top: 0; }
 
-  /* LINK CARDS */
-  .link-card {
+  /* ── PROOF CARDS ── */
+  .proof-card {
     display: block;
     background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 0.875rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
     margin-bottom: 0.5rem;
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--ink);
     transition: all 0.15s ease;
   }
-  .link-card:hover {
-    background: var(--card-hover);
-    border-color: var(--bast-blue);
+  .proof-card:hover {
+    border-color: var(--accent-hover);
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(43,125,233,0.1);
+    box-shadow: 0 2px 12px rgba(43,125,233,0.08);
   }
-  .link-card .card-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 0.15rem;
-  }
-  .link-card .card-source {
-    font-size: 0.75rem;
-    color: var(--text-light);
-  }
-
-  /* FEATURED (larger card) */
-  .featured-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 0.75rem;
-    text-decoration: none;
-    color: var(--text-primary);
-    display: block;
-    transition: all 0.15s ease;
-  }
-  .featured-card:hover {
-    background: var(--card-hover);
-    border-color: var(--bast-blue);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(43,125,233,0.1);
-  }
-  .featured-card .card-label {
-    font-size: 0.7rem;
+  .proof-card .card-label {
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--bast-blue);
-    margin-bottom: 0.35rem;
+    color: var(--text-light);
+    margin-bottom: 0.2rem;
   }
-  .featured-card .card-title {
-    font-size: 1rem;
+  .proof-card .card-title {
+    font-size: 0.92rem;
     font-weight: 600;
+    line-height: 1.35;
+  }
+  .proof-card .card-desc {
+    font-size: 0.8rem;
+    color: var(--text);
+    margin-top: 0.2rem;
+    line-height: 1.45;
+  }
+
+  /* ── COMPANY CARD ── */
+  .company-card {
+    display: block;
+    background: var(--ink);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.15s ease;
+  }
+  .company-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(26,26,46,0.25);
+  }
+  .company-card .card-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.5);
     margin-bottom: 0.25rem;
   }
-  .featured-card .card-desc {
-    font-size: 0.82rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
+  .company-card .card-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+  }
+  .company-card .card-desc {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.45;
   }
 
-  /* SHORTS GRID */
-  .shorts-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+  /* ── HEARTBEAT ── */
+  .heartbeat {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    text-align: center;
+    position: relative;
+  }
+  .heartbeat .heart {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #c0392b;
+    animation: pulse 1.8s ease-in-out infinite;
     margin-bottom: 0.5rem;
   }
-  .shorts-grid .link-card {
-    margin-bottom: 0;
-    padding: 0.75rem 1rem;
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    14% { transform: scale(1.15); opacity: 1; }
+    28% { transform: scale(1); opacity: 0.85; }
+    42% { transform: scale(1.1); opacity: 1; }
+    56% { transform: scale(1); opacity: 0.85; }
   }
-  .shorts-grid .card-title { font-size: 0.82rem; }
+  .heartbeat .hb-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+    color: var(--ink);
+  }
+  .heartbeat .hb-desc {
+    font-size: 0.78rem;
+    color: var(--text);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heartbeat .hb-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #c0392b;
+    text-decoration: none;
+    padding: 0.45rem 1.1rem;
+    border: 1.5px solid rgba(192, 57, 43, 0.25);
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .heartbeat .hb-cta:hover {
+    border-color: #c0392b;
+    background: #c0392b;
+    color: #fff;
+  }
+  .heartbeat .hb-invite {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-light);
+    margin-top: 0.6rem;
+  }
 
-  /* FOOTER */
+  /* ── CTA / REACH ── */
+  .reach {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  .reach p {
+    font-size: 0.85rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .reach-links {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .reach-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .reach-links a:hover {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: #fff;
+  }
+  .reach-links a svg { width: 14px; height: 14px; fill: currentColor; }
+
+  /* ── FOOTER ── */
   .footer {
     text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.75rem;
+    padding: 1.5rem 1rem 2.5rem;
+    font-size: 0.7rem;
     color: var(--text-light);
+    letter-spacing: 0.03em;
   }
-  .footer a { color: var(--bast-blue); text-decoration: none; }
 
-  /* RESPONSIVE */
+  /* ── RESPONSIVE ── */
   @media (max-width: 480px) {
-    .hero { padding: 2.5rem 1rem 2rem; }
-    .hero h1 { font-size: 1.5rem; }
-    .main { padding: 1rem 0.75rem 2rem; }
-    .shorts-grid { grid-template-columns: 1fr; }
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .hero h1 { font-size: 2.5rem; }
+    .main { padding: 1.5rem 1.25rem 3rem; }
   }
 </style>
 </head>
 <body>
 
+<!-- ═══════ THE CLAIM ═══════ -->
 <div class="hero">
-  <div class="hero-content">
-    <div class="avatar">BR</div>
-    <h1>Beth Rudden</h1>
-    <p class="subtitle">CEO & Co-Founder, Bast AI</p>
-    <p class="tagline">Archaeologist of memory systems. Building explainable AI infrastructure where every answer shows its work.</p>
-    <div class="social-row">
-      <a href="https://linkedin.com/in/brudden" aria-label="LinkedIn" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="https://open.substack.com/pub/bastai" aria-label="Substack" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24l9.6-5.244L20.66 24V10.812H1.46zm21.08-8.648H1.46V0h21.08v2.164z"/></svg>
-      </a>
-      <a href="https://aifortherestofus.us" aria-label="Book" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M21 4H3a1 1 0 00-1 1v14a1 1 0 001 1h18a1 1 0 001-1V5a1 1 0 00-1-1zM4 6h7v12H4V6zm9 12V6h7v12h-7z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/ibethrudden" aria-label="Instagram" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      </a>
-      <a href="https://x.com/bethrudden" aria-label="X" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      </a>
-      <a href="https://github.com/bethrudden" aria-label="GitHub" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-    </div>
+  <p class="eyebrow">CEO & Co-Founder · Bast AI</p>
+  <h1>Beth<br>Rudden</h1>
+  <p class="thesis">Pioneering Certainty in AI. Former Chief Data Officer of IBM's $32B Managed Services division. Now building the infrastructure that makes AI show its work.</p>
+  <div class="social-row">
+    <a href="https://linkedin.com/in/brudden" aria-label="LinkedIn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/ibethrudden" aria-label="Instagram" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="https://x.com/bethrudden" aria-label="X" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://github.com/bethrudden" aria-label="GitHub" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
   </div>
 </div>
 
 <div class="main">
 
-  <!-- BIO -->
-  <div class="bio-section">
-    Beth Rudden is the CEO and co-founder of Bast AI, a Denver-based company building infrastructure that lets hospitals, universities, and public institutions deploy AI they can verify, explain, and trust. She holds more than 50 patents and publications, co-authored <em>AI for the Rest of Us</em>, and was recognized as one of the 100 Most Brilliant Leaders in AI Ethics (2023). She holds degrees in Anthropology and Classics.
-  </div>
+  <!-- ═══════ THE PROOF ═══════ -->
+  <div class="section-label">Now</div>
 
-  <!-- FEATURED -->
-  <div class="section-header">Featured</div>
-
-  <a class="featured-card" href="https://bast.ai/home" target="_blank" rel="noopener">
-    <div class="card-label">Company</div>
-    <div class="card-title">Bast AI</div>
-    <div class="card-desc">Explainable AI infrastructure. Every answer shows its work.</div>
+  <a class="proof-card" href="https://www.youtube.com/watch?v=Bd9xqcAqVYU" target="_blank" rel="noopener">
+    <div class="card-label">Masters of Scale Strategy Sessions</div>
+    <div class="card-title">With Reid Hoffman and Rana el Kaliouby</div>
   </a>
 
-  <a class="featured-card" href="https://aifortherestofus.us" target="_blank" rel="noopener">
+  <a class="proof-card" href="https://aifortherestofus.us" target="_blank" rel="noopener">
     <div class="card-label">Book</div>
     <div class="card-title">AI for the Rest of Us</div>
     <div class="card-desc">Nominated #1 book to read in 2024 by Constellation Research.</div>
   </a>
 
-  <a class="featured-card" href="#" target="_blank" rel="noopener">
-    <div class="card-label">Recognition — 2025</div>
-    <div class="card-title">WOW3 Unstoppable — Most Inspirational Women of Web3 and AI</div>
-    <div class="card-desc">Named alongside leaders shaping the future of AI and Web3.</div>
+  <a class="proof-card" href="https://open.substack.com/pub/bastai" target="_blank" rel="noopener">
+    <div class="card-label">Writing</div>
+    <div class="card-title">Join the conversation</div>
+    <div class="card-desc">On debt, furry conventions, fog that rolls in like little cat feet, and why AI needs librarians more than engineers.</div>
   </a>
 
-  <!-- TALKS & KEYNOTES -->
-  <div class="section-header">Talks & Keynotes</div>
+  <!-- ═══════ THE COMPANY ═══════ -->
+  <div class="section-label">The Work</div>
 
-  <a class="link-card" href="https://www.youtube.com/watch?v=nD-ABIlzxOc&t=8604s" target="_blank" rel="noopener">
-    <div class="card-title">Transformative Impact Summit — 11 min keynote</div>
-    <div class="card-source">YouTube</div>
+  <a class="company-card" href="https://bast.ai/home" target="_blank" rel="noopener">
+    <div class="card-label">Company</div>
+    <div class="card-title">Bast AI</div>
+    <div class="card-desc">LLMs Guess. RAG Fetches. Bast Knows.</div>
   </a>
 
-  <a class="link-card" href="https://www.youtube.com/watch?v=hcqpT8yilPg" target="_blank" rel="noopener">
-    <div class="card-title">AI's Leap: Shaping Tailored Learning | SXSW EDU 2024</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://www.youtube.com/watch?v=3ELdP2ZqMFQ" target="_blank" rel="noopener">
-    <div class="card-title">Keynote Presentation | COLTT 2023</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://youtu.be/7d90sXz0vWA?feature=shared" target="_blank" rel="noopener">
-    <div class="card-title">Futures Summit 2024</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://www.youtube.com/watch?v=EXNd7qCILHo" target="_blank" rel="noopener">
-    <div class="card-title">How Linguistics, Semantics, and Artifacts Shape AI</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://www.youtube.com/watch?v=ddpoo3VWLXg" target="_blank" rel="noopener">
-    <div class="card-title">Explainable AI That Is Accessible for All Humans</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://www.youtube.com/watch?v=Bd9xqcAqVYU" target="_blank" rel="noopener">
-    <div class="card-title">Reid Hoffman, Rana el Kaliouby, and Beth Rudden on Testing AI</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://youtu.be/4Pf6OouYw64?feature=shared" target="_blank" rel="noopener">
-    <div class="card-title">Unlocking Consciousness: Navigating AI's Impact on Humanity</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <!-- PODCASTS & INTERVIEWS -->
-  <div class="section-header">Podcasts & Interviews</div>
-
-  <a class="link-card" href="https://www.datastax.com/resources/podcast/redefining-ai-ethics-explainability" target="_blank" rel="noopener">
-    <div class="card-title">Redefining AI Ethics: The Key Role of Explainability</div>
-    <div class="card-source">DataStax Podcast</div>
-  </a>
-
-  <a class="link-card" href="https://podcasts.apple.com/us/podcast/human-centered-ai-with-beth-rudden-ceo-of-bast-ai" target="_blank" rel="noopener">
-    <div class="card-title">Human-Centered AI, with Beth Rudden CEO of Bast AI</div>
-    <div class="card-source">Apple Podcasts</div>
-  </a>
-
-  <a class="link-card" href="https://youtu.be/Rl62Q1UaR7Q?feature=shared" target="_blank" rel="noopener">
-    <div class="card-title">Conversation on AI's Role Today with Bast AI</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://youtu.be/EjZrrikUYEo?feature=shared" target="_blank" rel="noopener">
-    <div class="card-title">Thinking About AI for Everyone</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <a class="link-card" href="https://www.buzzsprout.com/2460445/episodes/17294785" target="_blank" rel="noopener">
-    <div class="card-title">Beyond AI's Blackbox: Building Technology That Serves People</div>
-    <div class="card-source">Buzzsprout</div>
-  </a>
-
-  <a class="link-card" href="https://www.youtube.com/@AndWeFeelFinePod" target="_blank" rel="noopener">
-    <div class="card-title">And We Feel Fine (podcast)</div>
-    <div class="card-source">YouTube</div>
-  </a>
-
-  <!-- PRESS & PROFILES -->
-  <div class="section-header">Press & Profiles</div>
-
-  <a class="link-card" href="https://canvasrebel.com/meet-beth-rudden/" target="_blank" rel="noopener">
-    <div class="card-title">Meet Beth Rudden — CanvasRebel</div>
-    <div class="card-source">canvasrebel.com</div>
-  </a>
-
-  <a class="link-card" href="https://boldjourney.com/meet-beth-rudden/" target="_blank" rel="noopener">
-    <div class="card-title">Meet Beth Rudden — BoldJourney</div>
-    <div class="card-source">boldjourney.com</div>
-  </a>
-
-  <a class="link-card" href="https://theweb3.news/web3-innovator-1-on-1/beth-ethical-ai" target="_blank" rel="noopener">
-    <div class="card-title">Journey in Ethical AI and Sustainable Technology Leadership</div>
-    <div class="card-source">The Web3 News</div>
-  </a>
-
-  <a class="link-card" href="https://www.linkedin.com/posts/wednesday-women_featured-beth-rudden" target="_blank" rel="noopener">
-    <div class="card-title">How Do You Turn Cognitive Science into a $2B Business?</div>
-    <div class="card-source">LinkedIn — Wednesday Women</div>
-  </a>
-
-  <a class="link-card" href="https://www.linkedin.com/pulse/theres-more-story-linda-ne" target="_blank" rel="noopener">
-    <div class="card-title">There's More to the Story</div>
-    <div class="card-source">LinkedIn</div>
-  </a>
-
-  <a class="link-card" href="https://idiyas.com/inventor/mary-e-rudden" target="_blank" rel="noopener">
-    <div class="card-title">Inventions, Patents and Patent Applications</div>
-    <div class="card-source">idiyas.com</div>
-  </a>
-
-  <!-- WRITING -->
-  <div class="section-header">Writing</div>
-
-  <a class="link-card" href="https://open.substack.com/pub/bastai/p/koan-for-the-road-with-no-windshield" target="_blank" rel="noopener">
-    <div class="card-title">Koan for the Road with No Windshield</div>
-    <div class="card-source">Substack</div>
-  </a>
-
-  <a class="link-card" href="https://open.substack.com/pub/bastai/p/ai-is-for-everyone" target="_blank" rel="noopener">
-    <div class="card-title">AI Is for Everyone</div>
-    <div class="card-source">Substack</div>
-  </a>
-
-  <!-- SHORTS -->
-  <div class="section-header">Shorts</div>
-
-  <div class="shorts-grid">
-    <a class="link-card" href="https://www.youtube.com/shorts/53LHFcDtpH0" target="_blank" rel="noopener">
-      <div class="card-title">Can AI Set Us Free?</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/fQdZG43JxQY" target="_blank" rel="noopener">
-      <div class="card-title">What Are Ethics? Who Are Villains in Our AI Age?</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/KmOKKu6xq-0" target="_blank" rel="noopener">
-      <div class="card-title">Can Predictive AI Have Ethical Applications?</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/bSUz2D-n_cU" target="_blank" rel="noopener">
-      <div class="card-title">Getting on the Path to an Ethical AI Future</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/XvcMhpL700Y" target="_blank" rel="noopener">
-      <div class="card-title">NLU vs NLP vs NLC vs Generative AI</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/BfqpAQF06I8" target="_blank" rel="noopener">
-      <div class="card-title">When Do Findings from Good Research Expire?</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/M8uNuNlRvm0" target="_blank" rel="noopener">
-      <div class="card-title">What Is Data Science?</div>
-    </a>
-    <a class="link-card" href="https://www.youtube.com/watch?v=wregP_9rFns" target="_blank" rel="noopener">
-      <div class="card-title">How AI Is Quietly Reshaping Our Lives</div>
-    </a>
-    <a class="link-card" href="https://youtu.be/CktFvlZJSxQ" target="_blank" rel="noopener">
-      <div class="card-title">What Does the Future of Ethical AI Look Like?</div>
-    </a>
+  <!-- ═══════ THE HEARTBEAT ═══════ -->
+  <div class="heartbeat">
+    <div class="heart">&#x2764;</div>
+    <div class="hb-title">Heartbeat</div>
+    <div class="hb-desc">Investor updates from inside the Explainable AI movement. What we shipped, what changed, what's next.</div>
+    <a class="hb-cta" href="mailto:beth@bast.ai?subject=Heartbeat%20—%20Request%20Access">Request Access</a>
+    <div class="hb-invite">Invite only</div>
   </div>
 
-  <div class="footer">
-    <p><a href="https://bast.ai">bast.ai</a> · Denver, Colorado</p>
+  <!-- ═══════ THE REACH ═══════ -->
+  <div class="reach">
+    <p>Want to talk about explainable AI, investment, or speaking?<br><a href="cv.html" style="font-size: 0.75rem; color: var(--text-light); text-decoration: none; border-bottom: 1px solid var(--border);">Full archive — speaking, patents, awards</a></p>
+    <div class="reach-links">
+      <a href="https://linkedin.com/in/brudden" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="mailto:beth@bast.ai">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email
+      </a>
+      <a href="https://open.substack.com/pub/bastai" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24l9.6-5.244L20.66 24V10.812H1.46zm21.08-8.648H1.46V0h21.08v2.164z"/></svg>
+        Substack
+      </a>
+    </div>
   </div>
 
+</div>
+
+<div class="footer">
+  Denver, Colorado
 </div>
 
 </body>

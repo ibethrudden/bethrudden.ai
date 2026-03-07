@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beth Rudden — CV & Archive</title>
+<meta name="description" content="Speaking engagements, awards, patents, publications, and board positions for Beth Rudden, CEO & Co-Founder of Bast AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --text: #444;
+    --text-light: #777;
+    --border: #d8dce2;
+    --bg: #fafbfc;
+    --card-bg: #fff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .header {
+    padding: 3rem 2rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+    border-bottom: 2.5px solid var(--ink);
+  }
+  .header .back {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.15s;
+  }
+  .header .back:hover { color: var(--ink); }
+  .header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-top: 1rem;
+  }
+  .header .subtitle {
+    font-size: 0.85rem;
+    color: var(--text);
+    margin-top: 0.25rem;
+  }
+
+  .main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+  }
+
+  .section-title {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-light);
+    margin: 2.5rem 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-title:first-child { margin-top: 0.5rem; }
+
+  /* Year groups */
+  .year-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* Items */
+  .item {
+    font-size: 0.82rem;
+    color: var(--text);
+    padding: 0.3rem 0;
+    line-height: 1.45;
+  }
+  .item .date {
+    display: inline-block;
+    width: 5rem;
+    font-size: 0.72rem;
+    color: var(--text-light);
+    flex-shrink: 0;
+  }
+
+  /* Awards / Board items */
+  .credential {
+    font-size: 0.85rem;
+    color: var(--text);
+    padding: 0.4rem 0;
+    line-height: 1.5;
+  }
+  .credential strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* Patent categories */
+  .patent-group {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .patent-group-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .patent-item {
+    font-size: 0.8rem;
+    color: var(--text);
+    padding: 0.2rem 0 0.2rem 0.75rem;
+    border-left: 2px solid var(--border);
+    margin-bottom: 0.15rem;
+    line-height: 1.4;
+  }
+
+  /* Linked items */
+  .item a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.15s;
+  }
+  .item a:hover {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+  }
+  .item .context {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-light);
+    margin-top: 0.1rem;
+    padding-left: 5rem;
+    font-style: italic;
+  }
+  .credential a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.15s;
+  }
+  .credential a:hover {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+  }
+
+  /* Featured moments */
+  .featured-moment {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.85rem 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .featured-moment .fm-title {
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .featured-moment .fm-context {
+    font-size: 0.75rem;
+    color: var(--text-light);
+  }
+  .featured-moment .fm-year {
+    font-size: 0.65rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .featured-moment a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.15s;
+  }
+  .featured-moment a:hover {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1.5rem 1rem 2.5rem;
+    font-size: 0.7rem;
+    color: var(--text-light);
+  }
+  .footer a { color: var(--ink); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 480px) {
+    .header { padding: 2rem 1.25rem 1.5rem; }
+    .header h1 { font-size: 1.75rem; }
+    .main { padding: 1rem 1.25rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a class="back" href="index.html">&larr; Back</a>
+  <h1>Archive</h1>
+  <p class="subtitle">Speaking, awards, patents, publications, and board positions.</p>
+</div>
+
+<div class="main">
+
+  <!-- ═══════ AWARDS ═══════ -->
+  <div class="section-title">Awards & Recognition</div>
+  <div class="credential">WOW3 Unstoppable — Most Inspirational Women of Web3 and AI <strong>(2025)</strong></div>
+  <div class="credential">Distinguished Data Scientist — Professional Certification, The Open Group <strong>(2024)</strong></div>
+  <div class="credential">Bast AI awarded OEDIT Early-Stage Capital and Retention Grant <strong>(2024)</strong></div>
+  <div class="credential"><em>AI for the Rest of Us</em> — Nominated #1 book to read in 2024 by Constellation Research</div>
+  <div class="credential">100 Most Brilliant Leaders in AI Ethics <strong>(2023)</strong></div>
+  <div class="credential">IBM Master Inventor <strong>(2019)</strong></div>
+  <div class="credential">Lifetime Achievement Award, IBM Academy of Technology</div>
+
+  <!-- ═══════ BOARD & ADVISORY ═══════ -->
+  <div class="section-title">Board & Advisory</div>
+  <div class="credential">Board of Trustees, Maryville University</div>
+  <div class="credential">Advisory Board, <a href="https://casmi.northwestern.edu/people/" target="_blank" rel="noopener">Center for Advancing Safety of Machine Intelligence (CASMI)</a>, Northwestern University</div>
+  <div class="credential"><a href="https://regulatingai.org/experts/" target="_blank" rel="noopener">Regulating AI — Expert</a></div>
+  <div class="credential">Cognitive World Think Tank Member</div>
+  <div class="credential">Conference Host, Enterprise AI World at KMWorld (2024, 2025)</div>
+
+  <!-- ═══════ WRITING & EXPERT ═══════ -->
+  <div class="section-title">Writing & Expert Contributions</div>
+  <div class="credential">Cognitive World — Writer and Expert Contributor</div>
+  <div class="credential">VentureBeat — Writer and Expert Contributor</div>
+  <div class="credential"><a href="https://open.substack.com/pub/bastai" target="_blank" rel="noopener">Substack</a></div>
+  <div class="credential"><a href="https://medium.com/@ibethrudden" target="_blank" rel="noopener">Medium</a></div>
+  <div class="credential"><a href="https://scholar.google.com/scholar?q=Beth+Rudden&hl=en&as_sdt=0,6" target="_blank" rel="noopener">Google Scholar — Publications</a></div>
+
+  <!-- ═══════ POLICY ═══════ -->
+  <div class="section-title">Policy & Public Accountability</div>
+  <div class="credential">Testified before the Colorado Senate Judiciary Committee on SB24-205, Colorado's landmark AI consumer protection act</div>
+  <div class="credential">Panelist alongside Colorado AG Phil Weiser at Silicon Flatirons on the regulatory future of AI</div>
+  <div class="credential">Speaker at ISP Symposium, Denver Museum of Nature & Science, with Congressman Joe Neguse on science communication ethics <strong>(2023)</strong></div>
+
+  <!-- ═══════ FEATURED MOMENTS ═══════ -->
+  <div class="section-title">Featured Moments</div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2026</div>
+    <div class="fm-title">The Cynefin Exploratory — Eagle</div>
+    <div class="fm-context">One of three Eagles with Dave Snowden and Delia McCabe</div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2025</div>
+    <div class="fm-title">Concordia Live</div>
+    <div class="fm-context">Gen. David Petraeus (Ret.) and Arvind Krishna in attendance</div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2025</div>
+    <div class="fm-title">Denver Council on Foreign Relations — Keynote</div>
+    <div class="fm-context">Followed by the Dean of the Korbel School, the Ambassador of the Middle East, and Representative of Taiwan</div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2024</div>
+    <div class="fm-title"><a href="https://www.youtube.com/watch?v=hcqpT8yilPg" target="_blank" rel="noopener">SXSW EDU — AI's Leap: Shaping Tailored Learning</a></div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2024</div>
+    <div class="fm-title">Colorado Senate Judiciary Committee — SB24-205</div>
+    <div class="fm-context">Testimony on Colorado's landmark AI consumer protection act</div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2023</div>
+    <div class="fm-title">ISP Symposium, Denver Museum of Nature & Science</div>
+    <div class="fm-context">With Congressman Joe Neguse — ethics of science communication</div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2023</div>
+    <div class="fm-title">The Salzburg Dialogue (Austria)</div>
+  </div>
+
+  <div class="featured-moment">
+    <div class="fm-year">2023</div>
+    <div class="fm-title">Global Female Leaders Economic Forum (Berlin)</div>
+  </div>
+
+  <!-- ═══════ HOST ═══════ -->
+  <div class="section-title">Podcast — Host</div>
+  <div class="credential"><a href="https://www.youtube.com/@AndWeFeelFinePod" target="_blank" rel="noopener">And We Feel Fine</a> — Co-host with Katie Smith</div>
+
+  <!-- ═══════ GUEST APPEARANCES ═══════ -->
+  <div class="section-title">Podcasts & Interviews — Guest</div>
+  <div class="credential"><a href="https://open.spotify.com/show/4sRBHMDiGOuIbJ4tJwYjgK" target="_blank" rel="noopener">Artificiality Institute — Conversation</a> (2025)</div>
+  <div class="credential"><a href="https://alistairlanger.de/podcast/72-your-ai-is-your-mirror-not-your-oracle-how-heuristics-hijack-your-thinking-with-beth-rudden/" target="_blank" rel="noopener">Your AI Is Your Mirror, Not Your Oracle</a> — Alistair Langer Podcast</div>
+  <div class="credential"><a href="https://www.youtube.com/watch?v=Bd9xqcAqVYU" target="_blank" rel="noopener">Masters of Scale Strategy Sessions</a> — with Reid Hoffman and Rana el Kaliouby</div>
+  <div class="credential"><a href="https://www.datastax.com/resources/podcast/redefining-ai-ethics-explainability" target="_blank" rel="noopener">Redefining AI Ethics: The Key Role of Explainability</a> — DataStax Podcast</div>
+  <div class="credential"><a href="https://podcasts.apple.com/us/podcast/human-centered-ai-with-beth-rudden-ceo-of-bast-ai" target="_blank" rel="noopener">Human-Centered AI, with Beth Rudden CEO of Bast AI</a></div>
+  <div class="credential">Women in AI Ethics — Responsible AI at Scale</div>
+  <div class="credential">The Changelog</div>
+  <div class="credential"><a href="https://youtu.be/Rl62Q1UaR7Q" target="_blank" rel="noopener">Conversation on AI's Role Today with Bast AI</a></div>
+  <div class="credential"><a href="https://youtu.be/EjZrrikUYEo" target="_blank" rel="noopener">Thinking About AI for Everyone</a></div>
+  <div class="credential"><a href="https://www.buzzsprout.com/2460445/episodes/17294785" target="_blank" rel="noopener">Beyond AI's Blackbox: Building Technology That Serves People</a></div>
+  <div class="credential"><a href="https://youtu.be/4Pf6OouYw64" target="_blank" rel="noopener">Unlocking Consciousness: Navigating AI's Impact on Humanity</a></div>
+
+  <!-- ═══════ PATENTS ═══════ -->
+  <div class="section-title">Selected Patents & Publications</div>
+  <p style="font-size: 0.8rem; color: var(--text); margin-bottom: 0.75rem;">50+ patents and publications as primary inventor/collaborator, spanning AI, NLP, knowledge graphs, data privacy, IoT, and semantic systems. Select patents donated to the Linux Foundation.</p>
+
+  <div class="patent-group">
+    <div class="patent-group-title">Bast AI — Pending</div>
+    <div class="patent-item">Ontology Management System with Explainable AI Integration</div>
+    <div class="patent-item">Multi-tier Data Verification System</div>
+    <div class="patent-item">Explainable AI Framework System</div>
+    <div class="patent-item">Cross-Domain Ontology Integration System</div>
+    <div class="patent-item">Inter-component Communication and Synchronization System</div>
+  </div>
+
+  <div class="patent-group">
+    <div class="patent-group-title">Selected IBM-Era Patents</div>
+    <div class="patent-item">Ontology-driven Feature Engineering in Statistical Predictions</div>
+    <div class="patent-item">Hyperplane Optimization in High Dimensional Ontology</div>
+    <div class="patent-item">Generative Learning Paths for Autonomous Upskilling</div>
+    <div class="patent-item">Representation of Distributional Similarity in Semantic Graphs</div>
+    <div class="patent-item">Violation and Exception Life Cycle Management via Blockchain</div>
+    <div class="patent-item">Method to Identify and Prevent Privacy Violations in Consumer Devices</div>
+  </div>
+
+  <!-- ═══════ EDUCATION ═══════ -->
+  <div class="section-title">Education & Credentials</div>
+  <div class="credential"><strong>MA</strong> Anthropology — University of Denver (1998)</div>
+  <div class="credential"><strong>BA</strong> Classical Archaeology (Greek and Latin) — Florida State University (1996)</div>
+
+  <div class="section-title" style="margin-top: 1.5rem;">IBM Appointments</div>
+  <div class="credential"><strong>Distinguished Engineer</strong> — IBM (appointed 2016)</div>
+  <div class="credential"><strong>Senior Technical Staff Member (STSM)</strong> — IBM (appointed 2012)</div>
+  <div class="credential"><strong>IBM Master Inventor</strong> (2019)</div>
+
+  <div class="section-title" style="margin-top: 1.5rem;">Professional Certifications</div>
+  <div class="credential">Distinguished Data Scientist — Professional Certification, The Open Group (2024)<br><span style="font-size: 0.75rem; color: var(--text-light);">Renewal of a profession Beth created and got accredited through The Open Group in 2018</span></div>
+  <div class="credential">L3 Thought Leader Certified Data Scientist, The Open Group (2018, recertified 2022)</div>
+
+  <!-- ═══════ BOOKS ═══════ -->
+  <div class="section-title">Books</div>
+  <div class="credential"><em>AI for the Rest of Us</em> (co-author) — Nominated #1 book to read in 2024 by Constellation Research</div>
+  <div class="credential"><em>Julian Steward and the Great Basin</em> (co-author and editor)</div>
+
+  <!-- ═══════ FULL TIMELINE ═══════ -->
+  <div class="section-title">Full Timeline</div>
+
+  <div class="year-label">2026</div>
+  <div class="item"><span class="date">Jan 28</span> Sparking Forum (Toronto) — with Rebecca Jones</div>
+  <div class="item"><span class="date">Jan 19</span> The Cynefin Exploratory</div>
+
+  <div class="year-label">2025</div>
+  <div class="item"><span class="date">Nov 19–20</span> KMWorld + Enterprise AI World (Conference Host)</div>
+  <div class="item"><span class="date">Oct 29</span> Internet Librarian Connect — AI Ethics session</div>
+  <div class="item"><span class="date">Oct 22–26</span> Artificiality Summit — Keynote provocation on Trust</div>
+  <div class="item"><span class="date">Oct 22</span> Women in AI — Crystal Street</div>
+  <div class="item"><span class="date">Oct 17</span> Homeless Prenatal Program Annual Luncheon (Bast AI hosted)</div>
+  <div class="item"><span class="date">Oct 15</span> RMAIIG — Women in AI</div>
+  <div class="item"><span class="date">Sep 26–28</span> Transformative Summit</div>
+  <div class="item"><span class="date">Sep 24</span> Concordia Live</div>
+  <div class="item"><span class="date">Sep 19</span> AIGG North America</div>
+  <div class="item"><span class="date">Sep 5</span> DCFR Keynote</div>
+  <div class="item"><span class="date">Jul 31</span> <a href="https://www.youtube.com/watch?v=3ELdP2ZqMFQ" target="_blank" rel="noopener">COLTT</a></div>
+  <div class="item"><span class="date">Jun 9</span> InnEdCo</div>
+  <div class="item"><span class="date">May 21</span> CULC Future Labs Webinar</div>
+  <div class="item"><span class="date">May 14</span> Maryville Keynote</div>
+  <div class="item"><span class="date">May 6–7</span> University of Toronto</div>
+  <div class="item"><span class="date">Apr 4</span> CCD AI Workshop</div>
+  <div class="item"><span class="date">Mar 28</span> Practically Tomorrow Podcast</div>
+  <div class="item"><span class="date">Mar 17–19</span> KM + AI Summit</div>
+  <div class="item"><span class="date">Feb 13</span> Maryville's Women Leadership Program</div>
+
+  <div class="year-label">2024</div>
+  <div class="item"><span class="date">Dec 3</span> WISE BRG</div>
+  <div class="item"><span class="date">Nov 19</span> Enterprise AI + KMWorld</div>
+  <div class="item"><span class="date">Nov 14–15</span> WLDA</div>
+  <div class="item"><span class="date">Nov 4</span> ELVTR (Future Trends in LLMs)</div>
+  <div class="item"><span class="date">Oct 30</span> DU — AI for the Rest of Us</div>
+  <div class="item"><span class="date">Oct 24</span> AI for the Rest of Us at Tulane University</div>
+  <div class="item"><span class="date">Oct 22</span> Riderflex Podcast</div>
+  <div class="item"><span class="date">Oct 18</span> Homeless Prenatal Program Luncheon</div>
+  <div class="item"><span class="date">Oct 17</span> Women in AI Virtual Event</div>
+  <div class="item"><span class="date">Oct 14–16</span> Human Potential Summit</div>
+  <div class="item"><span class="date">Oct 10</span> ProjectPro Podcast</div>
+  <div class="item"><span class="date">Sep 23</span> Constellation AI Forum</div>
+  <div class="item"><span class="date">Sep 19</span> DenAI Summit</div>
+  <div class="item"><span class="date">Sep 16</span> Virtual Library Presentation</div>
+  <div class="item"><span class="date">Sep 11</span> Crisp Connect 2024</div>
+  <div class="item"><span class="date">Sep 10</span> <a href="https://youtu.be/7d90sXz0vWA" target="_blank" rel="noopener">Futures Summit CCC</a></div>
+  <div class="item"><span class="date">Aug 9</span> DisrupTV</div>
+  <div class="item"><span class="date">Aug 7</span> DVC Meetup</div>
+  <div class="item"><span class="date">Jul 30</span> Luminoso Webinar</div>
+  <div class="item"><span class="date">May 8–9</span> Data Summit 2024</div>
+  <div class="item"><span class="date">May 8</span> Final Accelerator TVXW 2024</div>
+  <div class="item"><span class="date">Apr 14–16</span> ASU + GSV Summit</div>
+  <div class="item"><span class="date">Mar 21</span> Tampa Bay Library Consortium Tech Conference</div>
+  <div class="item"><span class="date">Mar 4–7</span> SXSW EDU</div>
+  <div class="item"><span class="date">Feb 7–9</span> Maryville Board of Trustees</div>
+
+  <div class="year-label">2023</div>
+  <div class="item"><span class="date">Dec 6</span> ISP Symposium, Denver Museum of Nature & Science</div>
+  <div class="item"><span class="date">Dec 1</span> CU Boulder Lecture</div>
+  <div class="item"><span class="date">Nov 6–9</span> KMWorld & Enterprise AI World</div>
+  <div class="item"><span class="date">Oct 18–19</span> HAI Alloy Summit</div>
+  <div class="item"><span class="date">Oct 16–19</span> Internet Librarian Connect</div>
+  <div class="item"><span class="date">Oct 4</span> Talent Forward</div>
+  <div class="item"><span class="date">Sep 26</span> CDO Roundtable Event (Copenhagen)</div>
+  <div class="item"><span class="date">Sep 18–22</span> Denver Startup Week</div>
+  <div class="item"><span class="date">Sep 14</span> CTA Conference</div>
+  <div class="item"><span class="date">Sep 1</span> CU Boulder Regents</div>
+  <div class="item"><span class="date">Aug 3</span> <a href="https://www.youtube.com/watch?v=3ELdP2ZqMFQ" target="_blank" rel="noopener">COLTT Conference</a></div>
+  <div class="item"><span class="date">Jun 29</span> CTA Insights Panel</div>
+  <div class="item"><span class="date">Jun 4–7</span> AIMed Global Summit</div>
+  <div class="item"><span class="date">May 30</span> Stand Together Workshop (SNA)</div>
+  <div class="item"><span class="date">May 18</span> Temple Grandin</div>
+  <div class="item"><span class="date">May 15</span> Maryville BOT Student Outcomes</div>
+  <div class="item"><span class="date">Apr 28</span> USAID Presentation</div>
+  <div class="item"><span class="date">Apr 25</span> Global Female Leaders Economic Forum (Berlin)</div>
+  <div class="item"><span class="date">Mar 29</span> Computers in Libraries</div>
+  <div class="item"><span class="date">Mar 1</span> Career Innovation Company Roundtable</div>
+  <div class="item"><span class="date">Feb 16</span> MS Showcase (Explainable AI)</div>
+  <div class="item"><span class="date">Jan 12–14</span> The Salzburg Dialogue (Austria)</div>
+
+  <div class="year-label">2022</div>
+  <div class="item"><span class="date">Nov 7–10</span> KMWorld</div>
+  <div class="item"><span class="date">Oct 10</span> Gaming Industry Conference</div>
+  <div class="item"><span class="date">Oct 5</span> Global Talent Summit</div>
+  <div class="item"><span class="date">Sep 27–29</span> Mediatech Hub (Germany)</div>
+  <div class="item"><span class="date">Sep 20</span> <a href="https://www.youtube.com/watch?v=EXNd7qCILHo" target="_blank" rel="noopener">Diplomatic Courier's Global Goals in Action</a></div>
+  <div class="item"><span class="date">Aug 29</span> Master Class — Integrated AI Ethics (T3 Innovation)</div>
+  <div class="item"><span class="date">Aug 3</span> T3 Innovation</div>
+
+</div>
+
+<div class="footer">
+  <a href="index.html">bethrudden.ai</a> · Denver, Colorado
+</div>
+
+</body>
+</html>
