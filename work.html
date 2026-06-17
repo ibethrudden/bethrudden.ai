@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beth Rudden — Work With Me</title>
+<meta name="description" content="Advisory retainers, board seats, and selective speaking with Beth Rudden — CEO of Bast AI, former Chief Data Officer of IBM's $34B services division. For leaders making AI decisions they can't afford to get wrong.">
+<meta property="og:title" content="Beth Rudden — Work With Me">
+<meta property="og:description" content="Advisory retainers, board governance, and selective speaking on AI risk and explainability.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --text: #444;
+    --text-light: #777;
+    --border: #d8dce2;
+    --bg: #fafbfc;
+    --card-bg: #fff;
+    --accent-hover: #2B7DE9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    padding: 3rem 2rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+    border-bottom: 2.5px solid var(--ink);
+  }
+  .header .back {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.15s;
+  }
+  .header .back:hover { color: var(--ink); }
+  .header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-top: 1rem;
+    line-height: 1.1;
+  }
+  .header .subtitle {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-top: 0.6rem;
+    max-width: 480px;
+  }
+
+  /* ── MAIN ── */
+  .main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+  }
+
+  /* ── FRAME ── */
+  .frame {
+    font-size: 1rem;
+    color: var(--text);
+    line-height: 1.65;
+    margin-bottom: 0.75rem;
+  }
+  .frame strong { color: var(--ink); font-weight: 600; }
+  .frame + .frame { margin-top: 0; }
+
+  /* ── SECTION LABEL ── */
+  .section-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-light);
+    margin: 2.75rem 0 0.85rem;
+  }
+
+  /* ── OFFER ── */
+  .offer {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .offer .offer-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-hover);
+    margin-bottom: 0.3rem;
+  }
+  .offer h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+  .offer .lede {
+    font-size: 0.92rem;
+    color: var(--text);
+    line-height: 1.55;
+    margin-bottom: 1.1rem;
+  }
+  .offer .lede strong { color: var(--ink); font-weight: 600; }
+
+  /* ── OUTCOME ROWS ── */
+  .outcome {
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .outcome .o-title {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .outcome .o-desc {
+    font-size: 0.82rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  /* ── WORTH ── */
+  .worth {
+    margin-top: 1.1rem;
+    padding: 0.85rem 1rem;
+    background: var(--bg);
+    border-left: 2.5px solid var(--ink);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.82rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .worth strong { color: var(--ink); font-weight: 600; }
+
+  /* ── DARK BOARD CARD ── */
+  .offer.dark {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #fff;
+  }
+  .offer.dark .offer-label { color: rgba(255,255,255,0.55); }
+  .offer.dark h2 { color: #fff; }
+  .offer.dark .lede { color: rgba(255,255,255,0.8); }
+  .offer.dark .lede strong { color: #fff; }
+  .offer.dark .outcome { border-top-color: rgba(255,255,255,0.15); }
+  .offer.dark .o-title { color: #fff; }
+  .offer.dark .o-desc { color: rgba(255,255,255,0.7); }
+  .offer.dark .edge {
+    margin-top: 1.1rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    color: #fff;
+    line-height: 1.3;
+  }
+
+  /* ── SELECTIVE NOTE ── */
+  .selective {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* ── WHY BETH ── */
+  .why {
+    margin-top: 1rem;
+    font-size: 0.92rem;
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .why strong { color: var(--ink); font-weight: 600; }
+
+  /* ── CTA ── */
+  .cta {
+    margin-top: 2.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  .cta h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+  }
+  .cta p {
+    font-size: 0.85rem;
+    color: var(--text);
+    margin-bottom: 1.25rem;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--ink);
+    text-decoration: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .cta-button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(43,125,233,0.2);
+  }
+  .cta .terms {
+    font-size: 0.72rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center;
+    padding: 1.5rem 1rem 2.5rem;
+    font-size: 0.7rem;
+    color: var(--text-light);
+  }
+  .footer a { color: var(--ink); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 480px) {
+    .header { padding: 2rem 1.25rem 1.5rem; }
+    .header h1 { font-size: 1.9rem; }
+    .main { padding: 1.5rem 1.25rem 3rem; }
+    .offer { padding: 1.25rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a class="back" href="index.html">&larr; Beth Rudden</a>
+  <h1>Work With Me</h1>
+  <p class="subtitle">Advisory retainers, board seats, and selective speaking for leaders making AI decisions they can't afford to get wrong.</p>
+</div>
+
+<div class="main">
+
+  <!-- ═══════ THE FRAME ═══════ -->
+  <p class="frame">Ask your senior team to define your AI strategy. Then your agentic strategy. You'll get five different answers, and even your most technical leaders can't yet name a plan that doesn't open the company to enormous risk.</p>
+  <p class="frame">Underneath sits a truth the C-suite hasn't absorbed: <strong>AI doesn't understand the meaning of its own words.</strong> Confidence isn't comprehension. That gap &mdash; between what the machine says and what it knows &mdash; is where the risk lives.</p>
+
+  <!-- ═══════ RETAINER ═══════ -->
+  <div class="section-label">How we work together</div>
+
+  <div class="offer">
+    <div class="offer-label">Advisory Retainer</div>
+    <h2>Standing access</h2>
+    <p class="lede">A weekly touch-base that becomes whatever the moment needs: a board briefing, a strategy workshop, a vendor gut-check, training for your team. Here's what it delivers in the first two quarters.</p>
+
+    <div class="outcome">
+      <div class="o-title">One AI intent, across the whole team</div>
+      <div class="o-desc">Your leadership aligned on a single, well-articulated AI intent that maps to the business opportunity. Ask five executives today what the AI strategy is and count the answers. This work ends with one.</div>
+    </div>
+    <div class="outcome">
+      <div class="o-title">Risk trade-offs, made explicit</div>
+      <div class="o-desc">A tool-by-tool read of which AI is worth using where, weighed against your actual risk tolerance. A decision tool leadership uses, not a policy binder.</div>
+    </div>
+    <div class="outcome">
+      <div class="o-title">Contract and vendor protection</div>
+      <div class="o-desc">AI vendor contracts reviewed before signature, so a vendor's model failure never becomes your indemnity. This already kept one university board from carrying liability for software it didn't build.</div>
+    </div>
+    <div class="outcome">
+      <div class="o-title">A standing technical read</div>
+      <div class="o-desc">An advisor who tracks the AI landscape every week and translates what changed into what it means for you &mdash; before your vendors do.</div>
+    </div>
+
+    <div class="worth"><strong>What it's worth:</strong> one mis-signed AI vendor contract carries more liability than years of this retainer. One avoided dead-end POC pays for it outright.</div>
+  </div>
+
+  <!-- ═══════ BOARD ═══════ -->
+  <div class="offer dark">
+    <div class="offer-label">Board &amp; Governance</div>
+    <h2>The AI-enabled board</h2>
+    <p class="lede">Every board is asked two questions at once: how do we govern AI, and how do we use it ourselves? Most get advice on the first and nothing on the second &mdash; while the directors reviewing the AI strategy still read 300-page board books the night before.</p>
+
+    <div class="outcome">
+      <div class="o-title">Readiness</div>
+      <div class="o-desc">Where the board and management actually stand. A glass-box audit of any AI already in use &mdash; can its answers be traced, explained, and defended? Closes with a one-page AI Intent Charter: what you use AI to do, why, and the explicit non-goals.</div>
+    </div>
+    <div class="outcome">
+      <div class="o-title">Governance</div>
+      <div class="o-desc">The standing machinery of oversight: the questions directors ask management, AI risk reviewed at the fiduciary level, a risk-and-tradeoff scorecard, and a vendor review protocol that survives personnel changes.</div>
+    </div>
+    <div class="outcome">
+      <div class="o-title">Enablement</div>
+      <div class="o-desc">A governed, explainable AI instance for the board's own work &mdash; briefings, scenario questions, compliance lookups &mdash; grounded only in board-approved sources, every answer traceable to the page it came from.</div>
+    </div>
+
+    <div class="edge">Not a board that talks about AI. A board that models it.</div>
+  </div>
+
+  <!-- ═══════ SPEAKING ═══════ -->
+  <div class="offer">
+    <div class="offer-label">Speaking &amp; Executive Education</div>
+    <h2>Keynotes, briefings, and cohorts</h2>
+    <p class="lede">A 90-minute executive briefing that leaves your C-suite answering three questions in the same words: where AI puts you at risk, where it gives you an edge, and what you're changing versus installing. Keynotes on explainable AI, agentic systems, and the societal gap. Multi-session leadership cohorts that train your people on systems where every answer has a receipt.</p>
+
+    <p class="selective">Speaking is selective &mdash; the CEO chair comes first, so I take only engagements that justify stepping away from the company. Tell me the date and the ask.</p>
+  </div>
+
+  <!-- ═══════ WHY BETH ═══════ -->
+  <div class="section-label">Why me</div>
+  <p class="why">I built AI at the scale most boards only worry about: <strong>Chief Data Officer of IBM's $34B services division, a $450M AI P&amp;L grown 20% in six months,</strong> IBM Distinguished Engineer, 30-plus patents, co-founder of the Trustworthy AI movement. I trained as an archaeologist, so I read where a system came from and how it reached its answer. That's the advisor this moment calls for: someone who has shipped AI at scale and will tell you the truth about yours.</p>
+
+  <!-- ═══════ CTA ═══════ -->
+  <div class="cta">
+    <h3>Tell me what you're facing.</h3>
+    <p>The first conversation is a straight read on where you stand and whether I'm the right person for it.</p>
+    <a class="cta-button" href="mailto:beth@bast.ai?subject=Working%20together">Start the conversation &rarr;</a>
+    <p class="terms">Retainers billed quarterly, priced to your budget. Rates and availability on request.</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <a href="index.html">bethrudden.ai</a> &middot; Denver, Colorado
+</div>
+
+</body>
+</html>
