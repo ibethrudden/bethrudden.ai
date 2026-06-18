@@ -54,6 +54,26 @@
     color: var(--text);
     margin-top: 0.25rem;
   }
+  .download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--ink);
+    text-decoration: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .download-cv:hover {
+    background: #2B7DE9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(43,125,233,0.2);
+  }
+  .download-cv svg { width: 14px; height: 14px; fill: currentColor; }
 
   .main {
     max-width: 640px;
@@ -221,6 +241,10 @@
   <a class="back" href="index.html">&larr; Back</a>
   <h1>Track Record</h1>
   <p class="subtitle">Speaking, awards, patents, publications, and board positions.</p>
+  <a class="download-cv" href="Beth-Rudden-CV.pdf" download>
+    <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+    Download PDF
+  </a>
 </div>
 
 <div class="main">
@@ -307,10 +331,6 @@
     <div class="fm-year">2023</div>
     <div class="fm-title">Global Female Leaders Economic Forum (Berlin)</div>
   </div>
-
-  <!-- ═══════ HOST ═══════ -->
-  <div class="section-title">Podcast — Host</div>
-  <div class="credential"><a href="https://www.youtube.com/@AndWeFeelFinePod" target="_blank" rel="noopener">And We Feel Fine</a> — Co-host with Katie Smith</div>
 
   <!-- ═══════ GUEST APPEARANCES ═══════ -->
   <div class="section-title">Podcasts & Interviews — Guest</div>
