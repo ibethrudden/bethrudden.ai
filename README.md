@@ -7,7 +7,7 @@ This is a deliberately small, dependency-free static site hosted with GitHub Pag
 ## Structure
 
 - `index.html` — homepage and selected work
-- `work.html` — advisory, board, speaking, and strategic opportunities
+- `work.html` — advisory, board, and selected speaking engagements
 - `cv.html` — web CV
 - `Beth-Rudden-CV.pdf` — downloadable CV
 - `robots.txt` and `sitemap.xml` — search-engine metadata
