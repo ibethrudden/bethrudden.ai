@@ -228,6 +228,22 @@
   .footer a { color: var(--ink); text-decoration: none; }
   .footer a:hover { text-decoration: underline; }
 
+  @media print {
+    .header { padding: 1.5rem 2rem 1.25rem; }
+    .header .back, .download-cv { display: none; }
+    .header h1 { margin-top: 0; }
+    .main { padding: 1rem 2rem 1.5rem; }
+    .section-title { margin-top: 1.6rem; }
+    .credential { padding: 0.3rem 0; line-height: 1.4; }
+    .featured-moment {
+      padding: 0.65rem 0.9rem;
+      margin-bottom: 0.35rem;
+      break-inside: avoid;
+    }
+    .patent-group { break-inside: avoid; }
+    .footer { padding: 1rem; }
+  }
+
   @media (max-width: 480px) {
     .header { padding: 2rem 1.25rem 1.5rem; }
     .header h1 { font-size: 1.75rem; }
@@ -294,6 +310,11 @@
   </div>
 
   <div class="featured-moment">
+    <div class="fm-year">2026</div>
+    <div class="fm-title">EarthX — Speaker</div>
+  </div>
+
+  <div class="featured-moment">
     <div class="fm-year">2025</div>
     <div class="fm-title">Concordia Live</div>
     <div class="fm-context">Gen. David Petraeus (Ret.) and Arvind Krishna in attendance</div>
@@ -334,6 +355,8 @@
 
   <!-- ═══════ GUEST APPEARANCES ═══════ -->
   <div class="section-title">Podcasts & Interviews — Guest</div>
+  <div class="credential"><a href="https://podcasts.apple.com/us/podcast/untangled/id1596588580" target="_blank" rel="noopener">Your data isn't exhaust. It's a belonging.</a> — Untangled <strong>(2026)</strong></div>
+  <div class="credential"><a href="https://shows.acast.com/authentic-ewe-podcast/episodes/human-wisdom-and-better-leadership-with-beth-rudden" target="_blank" rel="noopener">Human Wisdom and Better Leadership</a> — Authentic Ewe <strong>(2026)</strong></div>
   <div class="credential"><a href="https://open.spotify.com/show/4sRBHMDiGOuIbJ4tJwYjgK" target="_blank" rel="noopener">Artificiality Institute — Conversation</a> (2025)</div>
   <div class="credential"><a href="https://alistairlanger.de/podcast/72-your-ai-is-your-mirror-not-your-oracle-how-heuristics-hijack-your-thinking-with-beth-rudden/" target="_blank" rel="noopener">Your AI Is Your Mirror, Not Your Oracle</a> — Alistair Langer Podcast</div>
   <div class="credential"><a href="https://www.youtube.com/watch?v=Bd9xqcAqVYU" target="_blank" rel="noopener">Masters of Scale Strategy Sessions</a> — with Reid Hoffman and Rana el Kaliouby</div>
@@ -348,15 +371,11 @@
 
   <!-- ═══════ PATENTS ═══════ -->
   <div class="section-title">Selected Patents & Publications</div>
-  <p style="font-size: 0.8rem; color: var(--text); margin-bottom: 0.75rem;">50+ patents and publications as primary inventor/collaborator, spanning AI, NLP, knowledge graphs, data privacy, IoT, and semantic systems. Select patents donated to the Linux Foundation.</p>
+  <p style="font-size: 0.8rem; color: var(--text); margin-bottom: 0.75rem;">30+ patents and publications as primary inventor/collaborator, spanning AI, NLP, knowledge graphs, data privacy, IoT, and semantic systems. Select patents donated to the Linux Foundation.</p>
 
   <div class="patent-group">
-    <div class="patent-group-title">Bast AI — Pending</div>
-    <div class="patent-item">Ontology Management System with Explainable AI Integration</div>
-    <div class="patent-item">Multi-tier Data Verification System</div>
-    <div class="patent-item">Explainable AI Framework System</div>
-    <div class="patent-item">Cross-Domain Ontology Integration System</div>
-    <div class="patent-item">Inter-component Communication and Synchronization System</div>
+    <div class="patent-group-title">Bast AI</div>
+    <div class="patent-item">Five patent filings covering the core ontology engine, including two issued patents.</div>
   </div>
 
   <div class="patent-group">
@@ -387,94 +406,6 @@
   <div class="section-title">Books</div>
   <div class="credential"><em>AI for the Rest of Us</em> (co-author) — Nominated #1 book to read in 2024 by Constellation Research</div>
   <div class="credential"><em>Julian Steward and the Great Basin</em> (co-author and editor)</div>
-
-  <!-- ═══════ FULL TIMELINE ═══════ -->
-  <div class="section-title">Full Timeline</div>
-
-  <div class="year-label">2026</div>
-  <div class="item"><span class="date">Jan 28</span> Sparking Forum (Toronto) — with Rebecca Jones</div>
-  <div class="item"><span class="date">Jan 19</span> The Cynefin Exploratory</div>
-
-  <div class="year-label">2025</div>
-  <div class="item"><span class="date">Nov 19–20</span> KMWorld + Enterprise AI World (Conference Host)</div>
-  <div class="item"><span class="date">Oct 29</span> Internet Librarian Connect — AI Ethics session</div>
-  <div class="item"><span class="date">Oct 22–26</span> Artificiality Summit — Keynote provocation on Trust</div>
-  <div class="item"><span class="date">Oct 22</span> Women in AI — Crystal Street</div>
-  <div class="item"><span class="date">Oct 17</span> Homeless Prenatal Program Annual Luncheon (Bast AI hosted)</div>
-  <div class="item"><span class="date">Oct 15</span> RMAIIG — Women in AI</div>
-  <div class="item"><span class="date">Sep 26–28</span> Transformative Summit</div>
-  <div class="item"><span class="date">Sep 24</span> Concordia Live</div>
-  <div class="item"><span class="date">Sep 19</span> AIGG North America</div>
-  <div class="item"><span class="date">Sep 5</span> DCFR Keynote</div>
-  <div class="item"><span class="date">Jul 31</span> <a href="https://www.youtube.com/watch?v=3ELdP2ZqMFQ" target="_blank" rel="noopener">COLTT</a></div>
-  <div class="item"><span class="date">Jun 9</span> InnEdCo</div>
-  <div class="item"><span class="date">May 21</span> CULC Future Labs Webinar</div>
-  <div class="item"><span class="date">May 14</span> Maryville Keynote</div>
-  <div class="item"><span class="date">May 6–7</span> University of Toronto</div>
-  <div class="item"><span class="date">Apr 4</span> CCD AI Workshop</div>
-  <div class="item"><span class="date">Mar 28</span> <a href="https://practicallytomorrow.podbean.com/e/human-centered-ai-with-beth-rudden-ceo-of-bast-ai/" target="_blank" rel="noopener">Practically Tomorrow Podcast</a></div>
-  <div class="item"><span class="date">Mar 17–19</span> KM + AI Summit</div>
-  <div class="item"><span class="date">Feb 13</span> Maryville's Women Leadership Program</div>
-
-  <div class="year-label">2024</div>
-  <div class="item"><span class="date">Dec 3</span> WISE BRG</div>
-  <div class="item"><span class="date">Nov 19</span> Enterprise AI + KMWorld</div>
-  <div class="item"><span class="date">Nov 14–15</span> WLDA</div>
-  <div class="item"><span class="date">Nov 4</span> ELVTR (Future Trends in LLMs)</div>
-  <div class="item"><span class="date">Oct 30</span> DU — AI for the Rest of Us</div>
-  <div class="item"><span class="date">Oct 24</span> AI for the Rest of Us at Tulane University</div>
-  <div class="item"><span class="date">Oct 22</span> Riderflex Podcast</div>
-  <div class="item"><span class="date">Oct 18</span> Homeless Prenatal Program Luncheon</div>
-  <div class="item"><span class="date">Oct 17</span> Women in AI Virtual Event</div>
-  <div class="item"><span class="date">Oct 14–16</span> Human Potential Summit</div>
-  <div class="item"><span class="date">Oct 10</span> ProjectPro Podcast</div>
-  <div class="item"><span class="date">Sep 23</span> Constellation AI Forum</div>
-  <div class="item"><span class="date">Sep 19</span> DenAI Summit</div>
-  <div class="item"><span class="date">Sep 16</span> Virtual Library Presentation</div>
-  <div class="item"><span class="date">Sep 11</span> Crisp Connect 2024</div>
-  <div class="item"><span class="date">Sep 10</span> <a href="https://youtu.be/7d90sXz0vWA" target="_blank" rel="noopener">Futures Summit CCC</a></div>
-  <div class="item"><span class="date">Aug 9</span> DisrupTV</div>
-  <div class="item"><span class="date">Aug 7</span> DVC Meetup</div>
-  <div class="item"><span class="date">Jul 30</span> Luminoso Webinar</div>
-  <div class="item"><span class="date">May 8–9</span> Data Summit 2024</div>
-  <div class="item"><span class="date">May 8</span> Final Accelerator TVXW 2024</div>
-  <div class="item"><span class="date">Apr 14–16</span> ASU + GSV Summit</div>
-  <div class="item"><span class="date">Mar 21</span> Tampa Bay Library Consortium Tech Conference</div>
-  <div class="item"><span class="date">Mar 4–7</span> SXSW EDU</div>
-  <div class="item"><span class="date">Feb 7–9</span> Maryville Board of Trustees</div>
-
-  <div class="year-label">2023</div>
-  <div class="item"><span class="date">Dec 6</span> ISP Symposium, Denver Museum of Nature & Science</div>
-  <div class="item"><span class="date">Dec 1</span> CU Boulder Lecture</div>
-  <div class="item"><span class="date">Nov 6–9</span> KMWorld & Enterprise AI World</div>
-  <div class="item"><span class="date">Oct 18–19</span> HAI Alloy Summit</div>
-  <div class="item"><span class="date">Oct 16–19</span> Internet Librarian Connect</div>
-  <div class="item"><span class="date">Oct 4</span> Talent Forward</div>
-  <div class="item"><span class="date">Sep 26</span> CDO Roundtable Event (Copenhagen)</div>
-  <div class="item"><span class="date">Sep 18–22</span> Denver Startup Week</div>
-  <div class="item"><span class="date">Sep 14</span> CTA Conference</div>
-  <div class="item"><span class="date">Sep 1</span> CU Boulder Regents</div>
-  <div class="item"><span class="date">Aug 3</span> <a href="https://www.youtube.com/watch?v=3ELdP2ZqMFQ" target="_blank" rel="noopener">COLTT Conference</a></div>
-  <div class="item"><span class="date">Jun 29</span> CTA Insights Panel</div>
-  <div class="item"><span class="date">Jun 4–7</span> AIMed Global Summit</div>
-  <div class="item"><span class="date">May 30</span> Stand Together Workshop (SNA)</div>
-  <div class="item"><span class="date">May 18</span> Temple Grandin</div>
-  <div class="item"><span class="date">May 15</span> Maryville BOT Student Outcomes</div>
-  <div class="item"><span class="date">Apr 28</span> USAID Presentation</div>
-  <div class="item"><span class="date">Apr 25</span> Global Female Leaders Economic Forum (Berlin)</div>
-  <div class="item"><span class="date">Mar 29</span> Computers in Libraries</div>
-  <div class="item"><span class="date">Mar 1</span> Career Innovation Company Roundtable</div>
-  <div class="item"><span class="date">Feb 16</span> MS Showcase (Explainable AI)</div>
-  <div class="item"><span class="date">Jan 12–14</span> The Salzburg Dialogue (Austria)</div>
-
-  <div class="year-label">2022</div>
-  <div class="item"><span class="date">Nov 7–10</span> KMWorld</div>
-  <div class="item"><span class="date">Oct 10</span> Gaming Industry Conference</div>
-  <div class="item"><span class="date">Oct 5</span> Global Talent Summit</div>
-  <div class="item"><span class="date">Sep 27–29</span> Mediatech Hub (Germany)</div>
-  <div class="item"><span class="date">Sep 20</span> <a href="https://www.youtube.com/watch?v=EXNd7qCILHo" target="_blank" rel="noopener">Diplomatic Courier's Global Goals in Action</a></div>
-  <div class="item"><span class="date">Aug 29</span> Master Class — Integrated AI Ethics (T3 Innovation)</div>
-  <div class="item"><span class="date">Aug 3</span> T3 Innovation</div>
 
 </div>
 
