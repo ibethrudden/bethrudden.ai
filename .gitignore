@@ -1,0 +1,5 @@
+# OS cruft
+.DS_Store
+
+# Premium / gated collateral — keep local, never publish to the public Pages repo
+private/

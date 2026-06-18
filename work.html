@@ -61,6 +61,25 @@
     margin-top: 0.6rem;
     max-width: 480px;
   }
+  .header-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink);
+    background: transparent;
+    text-decoration: none;
+    padding: 0.5rem 1.1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  .header-cv:hover {
+    border-color: var(--ink);
+    transform: translateY(-1px);
+  }
 
   /* ── MAIN ── */
   .main {
@@ -286,7 +305,8 @@
 <div class="header">
   <a class="back" href="index.html">&larr; Beth Rudden</a>
   <h1>Work With Me</h1>
-  <p class="subtitle">Advisory retainers, board seats, and selective speaking for leaders making AI decisions they can't afford to get wrong.</p>
+  <p class="subtitle">How an advisory relationship grows into a Bast partnership &mdash; for leaders moving from AI ambition to auditable deployment.</p>
+  <a class="header-cv" href="cv.html">Full CV &rarr;</a>
 </div>
 
 <div class="main">
@@ -295,8 +315,12 @@
   <p class="frame"><strong>AI moved from experiment to infrastructure before most companies built the controls.</strong></p>
   <p class="frame">The result is a widening gap between what AI can produce and what leaders can trace, inspect, govern, and defend. I help boards and executive teams close that gap before it becomes operational, regulatory, or reputational risk.</p>
 
-  <!-- ═══════ RETAINER ═══════ -->
-  <div class="section-label">How we work together</div>
+  <!-- ═══════ THE ARC ═══════ -->
+  <div class="section-label">How the work unfolds</div>
+  <p class="frame">Advisory is the front door. When shared priorities emerge, the relationship can deepen into a structured Bast partnership &mdash; without forcing every organization into the same shape. Three stages, each standing on its own.</p>
+
+  <!-- ───── STAGE 01 · ADVISE ───── -->
+  <div class="section-label">Stage 01 &middot; Advise</div>
 
   <div class="offer">
     <div class="offer-label">Advisory Retainer</div>
@@ -352,6 +376,35 @@
     <p class="selective">Speaking is selective &mdash; the CEO chair comes first, so I take only engagements that justify stepping away from the company. Tell me the date and the ask.</p>
   </div>
 
+  <!-- ───── STAGE 02 · SHAPE ───── -->
+  <div class="section-label">Stage 02 &middot; Shape</div>
+
+  <div class="offer">
+    <div class="offer-label">Bast Sponsor Customer</div>
+    <h2>Turn your expertise into models that show their work</h2>
+    <p class="lede">When advisory surfaces a problem worth solving, a <strong>Sponsor Customer partnership</strong> turns your institutional knowledge into reusable, explainable models &mdash; every answer traceable to the page it came from. Two are already in operation.</p>
+
+    <div class="outcome">
+      <div class="o-title">Maryville University</div>
+      <div class="o-desc">$1.2M saved in the first semester and a 12% drop in nursing-student attrition, with a support path the university can explain and defend.</div>
+    </div>
+    <div class="outcome">
+      <div class="o-title">Offline-ready medical AI</div>
+      <div class="o-desc">Featured as the lead story on DVC's blog &mdash; a pipeline where every answer traces back through its context, source page, and document version.</div>
+    </div>
+  </div>
+
+  <!-- ───── STAGE 03 · DEPLOY ───── -->
+  <div class="section-label">Stage 03 &middot; Deploy</div>
+
+  <div class="offer dark">
+    <div class="offer-label">Deploy &amp; beyond</div>
+    <h2>Put it into operation</h2>
+    <p class="lede">Bast goes live in your environment, grounded only in sources you approve, every answer traceable to where it came from. When the fit is bigger, the conversation turns to a strategic partnership or investment.</p>
+
+    <div class="edge">Most relationships start at Stage 01. None are required to leave it.</div>
+  </div>
+
   <!-- ═══════ WHY BETH ═══════ -->
   <div class="section-label">Why me</div>
   <p class="why">I built AI at the scale most boards only worry about: <strong>Chief Data Officer of IBM's $34B services division, a $450M AI P&amp;L grown 20% in six months,</strong> IBM Distinguished Engineer, 30+ patents and publications, and an early leader in trustworthy AI. I trained as an archaeologist, so I read where a system came from and how it reached its answer. You want someone who has shipped AI at scale and will tell you the truth about yours.</p>
@@ -360,8 +413,8 @@
   <div class="cta">
     <h3>Tell me what you're facing.</h3>
     <p>The first conversation is a straight read on where you stand and whether I'm the right person for it.</p>
-    <a class="cta-button" href="mailto:beth@bast.ai?subject=Working%20together">Start the conversation &rarr;</a>
-    <p class="terms">Selected engagements. Details and availability on request.</p>
+    <a class="cta-button" href="mailto:meredith@bast.ai?subject=Working%20together">Start the conversation &rarr;</a>
+    <p class="terms"><a href="cv.html" style="color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--border);">Full CV</a> &nbsp;&middot;&nbsp; Selected engagements. Details and availability on request.</p>
   </div>
 
 </div>
@@ -370,7 +423,7 @@
   <a href="index.html">bethrudden.ai</a> &middot; Denver, Colorado
 </div>
 
-<a class="sticky-cta" href="mailto:beth@bast.ai?subject=Working%20together" aria-label="Start the conversation">Start the conversation &rarr;</a>
+<a class="sticky-cta" href="mailto:meredith@bast.ai?subject=Working%20together" aria-label="Start the conversation">Start the conversation &rarr;</a>
 
 <script>
   (function () {
