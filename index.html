@@ -8,6 +8,13 @@
 <meta property="og:title" content="Beth Rudden — AI that earns its keep">
 <meta property="og:description" content="Twenty years building AI at scale. Now helping companies get results worth showing off, and become places people want to work.">
 <meta property="og:type" content="profile">
+<meta property="og:url" content="https://bethrudden.ai/">
+<meta property="og:image" content="https://bethrudden.ai/beth.jpg">
+<meta property="og:image:alt" content="Beth Rudden, CEO and co-founder of Bast AI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beth Rudden — AI that earns its keep">
+<meta name="twitter:description" content="Twenty years building AI at scale. Now helping companies get results worth showing off, and become places people want to work.">
+<meta name="twitter:image" content="https://bethrudden.ai/beth.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -52,14 +59,20 @@
     align-items: flex-start;
   }
   .hero-text { width: 100%; }
+  .hero-photos {
+    display: flex;
+    gap: 0.6rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
   .hero-photo {
-    width: 200px;
+    flex: 1;
+    min-width: 0;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: center top;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid var(--border);
-    margin-bottom: 1.5rem;
   }
 
   .eyebrow {
@@ -385,7 +398,7 @@
     .layout { padding: 0 1.25rem; }
     .hero { padding-top: 3rem; }
     .hero h1 { font-size: 2.5rem; }
-    .hero-photo { width: 160px; }
+    .hero-photos { max-width: 340px; }
   }
 </style>
 </head>
@@ -394,7 +407,10 @@
 <!-- ═══════ THE CLAIM ═══════ -->
 <div class="layout">
 <div class="hero">
+  <div class="hero-photos">
+  <img class="hero-photo" src="beth-stage.jpg" alt="Beth Rudden seated on a panel stage at SXSW EDU, mid-conversation with a microphone, in her Van Gogh almond-blossom scarf and tan suede boots." width="200" height="250">
   <img class="hero-photo" src="beth.jpg" alt="Beth Rudden in blue glasses and a Van Gogh almond-blossom scarf, smiling as she signs a copy of her book, AI for the Rest of Us, at SXSW EDU. And because you are hearing this rather than seeing it, here is a gift: the Etruscans painted eggs into their tomb frescoes at Tarquinia — banqueters at the feast each holding a single egg. Scholars read it as a symbol of rebirth, painted to carry the dead into whatever comes next. Sorry for crowding your screen reader. I hope it sends you down a good rabbit hole." width="200" height="250">
+  </div>
   <div class="hero-text">
   <p class="eyebrow">CEO & Co-Founder · Bast AI</p>
   <h1>Beth<br>Rudden</h1>
@@ -434,10 +450,10 @@
     <div class="card-desc">Nominated #1 book to read by Constellation Research.</div>
   </a>
 
-  <a class="proof-card" href="https://open.substack.com/pub/bastai" target="_blank" rel="noopener">
-    <div class="card-label">Writing</div>
-    <div class="card-title">Join the conversation</div>
-    <div class="card-desc">On debt, furry conventions, fog that rolls in like little cat feet, and why AI needs librarians more than engineers.</div>
+  <a class="proof-card" href="https://bastai.substack.com/p/hey-boss-7-dead-giveaways-youre-treating" target="_blank" rel="noopener">
+    <div class="card-label">Most read · 63K views</div>
+    <div class="card-title">7 Ways to Spot Someone Who Thinks the AI Understands Them</div>
+    <div class="card-desc">The quiet tells that you're trusting the machine more than it has earned.</div>
   </a>
 
   <a class="proof-card" href="https://www.enterpriseaiworld.com/Articles/MoreNews.aspx?ContextSubtypeID=863" target="_blank" rel="noopener">
