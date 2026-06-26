@@ -28,6 +28,7 @@
     color: var(--ink);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   /* ── LAYOUT (split sidebar) ── */
@@ -97,6 +98,7 @@
     color: var(--text);
     line-height: 1.55;
     margin-bottom: 1.5rem;
+    overflow-wrap: break-word;
   }
   .hero-actions {
     display: flex;
@@ -185,6 +187,7 @@
     color: var(--text);
     padding: 0.4rem 0;
     line-height: 1.5;
+    overflow-wrap: break-word;
   }
   .credential strong { color: var(--ink); font-weight: 600; }
   .credential a {
@@ -212,6 +215,7 @@
     border-left: 2px solid var(--border);
     margin-bottom: 0.15rem;
     line-height: 1.4;
+    overflow-wrap: break-word;
   }
 
   /* Featured moments */
@@ -307,7 +311,7 @@
       <a class="back" href="index.html">&larr; Beth Rudden</a>
       <p class="eyebrow">CV &amp; Track record</p>
       <h1>Beth<br>Rudden</h1>
-      <p class="thesis">Founder &amp; CEO, Bast AI &middot; Enterprise AI operator</p>
+      <p class="thesis">Founder &amp; CEO, Bast AI &middot; Board trustee &amp; AI governance advisor</p>
       <div class="hero-actions">
         <a class="hero-cv" href="Beth-Rudden-CV.pdf" download>
           <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
@@ -332,10 +336,15 @@
   <!-- ═══════ MAIN ═══════ -->
   <div class="main">
 
+    <!-- ═══════ EXECUTIVE PROFILE ═══════ -->
+    <div class="section-title">Executive Profile</div>
+    <div class="credential">Beth Rudden is Founder &amp; CEO of Bast AI, a former IBM Distinguished Engineer, and a board-level advisor whose work spans trustworthy AI, data lineage, ontology systems, education, and institutional governance.</div>
+    <div class="credential">Her work sits at the intersection of executive decision-making, AI architecture, workforce transformation, and public accountability: the terrain institutions face as AI becomes part of learning, operations, governance, and employer expectations.</div>
+
     <!-- ═══════ OPERATING SCALE ═══════ -->
     <div class="section-title">Operating Scale</div>
     <div class="credential"><strong>Founder &amp; CEO, Bast AI</strong> &mdash; built explainable AI control infrastructure and a core ontology engine; five patent filings, including two issued patents.</div>
-    <div class="credential"><strong>25 years building AI systems</strong> &mdash; trained 10,000+ data scientists across 175 countries.</div>
+    <div class="credential"><strong>25 years building AI systems</strong> &mdash; created and secured The Open Group accreditation for a data-science professional pathway completed by 10,000+ data scientists across 175 countries.</div>
     <div class="credential"><strong>Chief Data Officer, IBM's $34B services division</strong> &mdash; led a $450M AI P&amp;L and grew it 20% in six months.</div>
     <div class="credential"><strong>IBM Distinguished Engineer and Master Inventor</strong> &mdash; enterprise architecture, data lineage, provenance, and trustworthy AI at global scale.</div>
 
@@ -357,6 +366,13 @@
     <div class="credential"><a href="https://regulatingai.org/experts/" target="_blank" rel="noopener">Regulating AI — Expert</a></div>
     <div class="credential">Cognitive World Think Tank Member</div>
     <div class="credential">Conference Host, Enterprise AI World at KMWorld (2024, 2025)</div>
+
+    <!-- ═══════ EDUCATION IMPACT ═══════ -->
+    <div class="section-title">Higher Education &amp; Workforce Impact</div>
+    <div class="credential"><strong>Maryville University sponsor-customer partnership</strong> &mdash; $1.2M saved in the first semester and 12% drop in nursing-student attrition through an explainable support path.</div>
+    <div class="credential"><strong>Global AI talent development</strong> &mdash; created and secured The Open Group accreditation for a data-science professional pathway completed by 10,000+ data scientists across 175 countries.</div>
+    <div class="credential"><strong>Executive education and board enablement</strong> &mdash; designs briefings, cohorts, and governance exercises that help leaders align on AI intent, risk, and operating controls.</div>
+    <div class="credential"><strong>SXSW EDU 2024</strong> &mdash; speaker for "AI's Leap: Shaping Tailored Learning."</div>
 
     <!-- ═══════ WRITING & EXPERT ═══════ -->
     <div class="section-title">Writing &amp; Expert Contributions</div>
@@ -429,8 +445,13 @@
     <div class="credential"><a href="https://open.spotify.com/show/4sRBHMDiGOuIbJ4tJwYjgK" target="_blank" rel="noopener">Artificiality Institute — Conversation</a> <strong>(2025)</strong></div>
 
     <!-- ═══════ PATENTS ═══════ -->
-    <div class="section-title">Selected Patents &amp; Publications</div>
-    <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 0.75rem; line-height: 1.55;">30+ patents and publications as primary inventor/collaborator, spanning AI, NLP, knowledge graphs, data privacy, IoT, and semantic systems. Select patents donated to the Linux Foundation.</p>
+    <div class="section-title">Patents, Publications &amp; Open Technical Assets</div>
+    <p style="font-size: 0.85rem; color: var(--text); margin-bottom: 0.75rem; line-height: 1.55;">30+ patents and publications as primary inventor/collaborator, spanning AI, NLP, knowledge graphs, data privacy, IoT, and semantic systems. Patent records are commonly indexed under Mary E. Rudden. Select patents and open technical assets were contributed to open-source ecosystems, including the Linux Foundation.</p>
+
+    <div class="patent-group">
+      <div class="patent-group-title">Open Technical Assets</div>
+      <div class="patent-item"><a href="https://ibm.github.io/data-science-best-practices/" target="_blank" rel="noopener">IBM Data Science - Best Practices</a>: open-source production-readiness playbook for data scientists and ML engineers, covering versioning, scalability, monitoring, engineering, testing, quality measurement, model training, deployment, automation, sizing, and security.</div>
+    </div>
 
     <div class="patent-group">
       <div class="patent-group-title">Bast AI</div>
@@ -458,8 +479,8 @@
     <div class="credential"><strong>IBM Master Inventor</strong> (2019)</div>
 
     <div class="section-title">Professional Certifications</div>
-    <div class="credential">Distinguished Data Scientist — Professional Certification, The Open Group (2024)<br><span style="font-size: 0.78rem; color: var(--text-light);">Renewal of a profession Beth created and got accredited through The Open Group in 2018</span></div>
-    <div class="credential">L3 Thought Leader Certified Data Scientist, The Open Group (2018, recertified 2022)</div>
+    <div class="credential">Distinguished Data Scientist — Professional Certification, The Open Group (2024)<br><span style="font-size: 0.78rem; color: var(--text-light);">Recognized through the data-science profession Beth created and secured accreditation for through The Open Group in 2018</span></div>
+    <div class="credential">L3 Thought Leader Certified Data Scientist, The Open Group (2018; renewed 2022 and 2024)</div>
 
     <!-- ═══════ BOOKS ═══════ -->
     <div class="section-title">Books</div>
