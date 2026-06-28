@@ -8,6 +8,51 @@
 <meta property="og:title" content="Beth Rudden — Work With Me">
 <meta property="og:description" content="AI strategy, governance, and control infrastructure for leaders making decisions they can't afford to get wrong.">
 <meta property="og:type" content="profile">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL8JCB0PXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FL8JCB0PXZ');
+
+  document.addEventListener('click', function(event) {
+    const link = event.target.closest('a[href]');
+    if (!link) return;
+
+    const href = link.getAttribute('href') || '';
+    const url = new URL(href, window.location.href);
+    const linkText = (link.innerText || link.getAttribute('aria-label') || '').trim();
+    const eventBase = {
+      link_text: linkText,
+      link_url: link.href,
+      page_path: window.location.pathname
+    };
+
+    if (link.classList.contains('hero-cv') || link.classList.contains('cta-button') || link.classList.contains('outcome-request')) {
+      gtag('event', 'cta_click', eventBase);
+    }
+
+    if (url.protocol === 'mailto:') {
+      gtag('event', 'mailto_click', eventBase);
+      gtag('event', 'generate_lead', {
+        ...eventBase,
+        method: 'email_click'
+      });
+    }
+
+    if (url.pathname.toLowerCase().endsWith('.pdf')) {
+      gtag('event', 'file_download', {
+        ...eventBase,
+        file_name: url.pathname.split('/').pop()
+      });
+    }
+
+    if (url.hostname && url.hostname !== window.location.hostname) {
+      gtag('event', 'outbound_click', eventBase);
+    }
+  });
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
