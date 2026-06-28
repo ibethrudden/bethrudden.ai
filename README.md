@@ -9,6 +9,8 @@ This is a deliberately small, dependency-free static site hosted with GitHub Pag
 - `index.html` — homepage and selected work
 - `work.html` — advisory, board, and selected speaking engagements
 - `cv.html` — web CV
+- `privacy.html` — privacy, cookie, analytics, and accessibility statement
+- `analytics-consent.js` — consent-aware GA4 event tracking
 - `Beth-Rudden-CV.pdf` — downloadable CV
 - `robots.txt` and `sitemap.xml` — search-engine metadata
 - `CNAME` — custom-domain configuration

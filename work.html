@@ -8,51 +8,7 @@
 <meta property="og:title" content="Beth Rudden — Work With Me">
 <meta property="og:description" content="AI strategy, governance, and control infrastructure for leaders making decisions they can't afford to get wrong.">
 <meta property="og:type" content="profile">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL8JCB0PXZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-FL8JCB0PXZ');
-
-  document.addEventListener('click', function(event) {
-    const link = event.target.closest('a[href]');
-    if (!link) return;
-
-    const href = link.getAttribute('href') || '';
-    const url = new URL(href, window.location.href);
-    const linkText = (link.innerText || link.getAttribute('aria-label') || '').trim();
-    const eventBase = {
-      link_text: linkText,
-      link_url: link.href,
-      page_path: window.location.pathname
-    };
-
-    if (link.classList.contains('hero-cv') || link.classList.contains('cta-button') || link.classList.contains('outcome-request')) {
-      gtag('event', 'cta_click', eventBase);
-    }
-
-    if (url.protocol === 'mailto:') {
-      gtag('event', 'mailto_click', eventBase);
-      gtag('event', 'generate_lead', {
-        ...eventBase,
-        method: 'email_click'
-      });
-    }
-
-    if (url.pathname.toLowerCase().endsWith('.pdf')) {
-      gtag('event', 'file_download', {
-        ...eventBase,
-        file_name: url.pathname.split('/').pop()
-      });
-    }
-
-    if (url.hostname && url.hostname !== window.location.hostname) {
-      gtag('event', 'outbound_click', eventBase);
-    }
-  });
-</script>
+<script src="analytics-consent.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -77,6 +33,14 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid rgba(43,125,233,0.35);
+    outline-offset: 2px;
+  }
 
   /* ── LAYOUT (split sidebar) ── */
   .layout {
@@ -92,7 +56,7 @@
     flex: 0 0 340px;
     position: sticky;
     top: 0;
-    padding: 4.5rem 2.5rem 3.5rem 0;
+    padding: 3.2rem 2.5rem 2.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -102,12 +66,13 @@
     display: flex;
     gap: 0.6rem;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.15rem;
   }
   .hero-photo {
     flex: 1;
     min-width: 0;
-    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: clamp(260px, 32vh, 340px);
     object-fit: cover;
     object-position: center top;
     border-radius: 10px;
@@ -130,7 +95,7 @@
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--text-light);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
   }
   .hero h1 {
     font-family: 'DM Serif Display', serif;
@@ -138,20 +103,20 @@
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 1.05;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
   .hero .thesis {
-    font-size: 1.02rem;
+    font-size: 0.98rem;
     color: var(--text);
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
+    line-height: 1.48;
+    margin-bottom: 1.15rem;
   }
   .hero-actions {
     display: flex;
     gap: 0.6rem;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.05rem;
   }
   .hero-cv {
     display: inline-flex;
@@ -366,6 +331,55 @@
     margin-top: 1rem;
   }
   .cta .terms a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .inquiry-form {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1.25rem;
+    text-align: left;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+  }
+  .field label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    padding: 0.68rem 0.75rem;
+  }
+  .field textarea {
+    min-height: 110px;
+    resize: vertical;
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    border-color: var(--accent-hover);
+    outline: 2px solid rgba(43, 125, 233, 0.16);
+    outline-offset: 1px;
+  }
+  .form-status {
+    min-height: 1.2rem;
+    font-size: 0.78rem;
+    color: var(--text-light);
+  }
 
   /* ── FOOTER ── */
   .footer {
@@ -399,6 +413,7 @@
     .layout { padding: 0 1.25rem; }
     .hero h1 { font-size: 2.4rem; }
     .offer { padding: 1.25rem 1.25rem; }
+    .form-row { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -415,9 +430,9 @@
       <a class="back" href="index.html">&larr; Beth Rudden</a>
       <p class="eyebrow">Work with me</p>
       <h1>Work<br>With Me</h1>
-      <p class="thesis">How an advisory relationship grows into a Bast partnership &mdash; for leaders moving from AI ambition to auditable deployment.</p>
+      <p class="thesis">Advisory, governance, and Bast partnerships for leaders moving from AI ambition to auditable deployment.</p>
       <div class="hero-actions">
-        <a class="hero-cv" href="mailto:meredith@bast.ai?subject=Working%20together">Start the conversation <span class="arrow">&rarr;</span></a>
+        <a class="hero-cv" href="#inquiry">Start the fit check <span class="arrow">&rarr;</span></a>
         <a class="hero-cv-secondary" href="cv.html">Full CV</a>
       </div>
       <div class="social-row">
@@ -534,10 +549,60 @@
     <p class="why">I built AI at the scale most boards only worry about: <strong>Chief Data Officer of IBM's $34B services division, a $450M AI P&amp;L grown 20% in six months,</strong> IBM Distinguished Engineer, 30+ patents and publications, and an early leader in trustworthy AI. I trained as an archaeologist, so I read where a system came from and how it reached its answer. You want someone who has shipped AI at scale and will tell you the truth about yours.</p>
 
     <!-- ═══════ CTA ═══════ -->
-    <div class="cta">
+    <div class="cta" id="inquiry">
       <h3>Tell me what you're facing.</h3>
       <p>The first conversation is a straight read on where you stand and whether I'm the right person for it.</p>
-      <a class="cta-button" href="mailto:meredith@bast.ai?subject=Working%20together">Start the conversation &rarr;</a>
+      <form class="inquiry-form" id="inquiry-form">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="organization">Organization</label>
+            <input id="organization" name="organization" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="role">Role</label>
+            <input id="role" name="role" autocomplete="organization-title">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="inquiry-type">Conversation</label>
+            <select id="inquiry-type" name="conversation" required>
+              <option value="">Choose one</option>
+              <option>Board AI governance</option>
+              <option>Executive advisory</option>
+              <option>Bast sponsor customer</option>
+              <option>Speaking or executive education</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="timeline">Timing</label>
+            <select id="timeline" name="timeline" required>
+              <option value="">Choose one</option>
+              <option>Now</option>
+              <option>Next 30 days</option>
+              <option>This quarter</option>
+              <option>Exploring</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="challenge">What are you trying to make true?</label>
+          <textarea id="challenge" name="challenge" required></textarea>
+        </div>
+        <button class="cta-button" type="submit">Send the fit check &rarr;</button>
+        <div class="form-status" id="form-status" aria-live="polite"></div>
+      </form>
       <p class="terms"><a href="cv.html">Full CV</a> &nbsp;&middot;&nbsp; Selected engagements. Details and availability on request.</p>
     </div>
 
@@ -545,8 +610,66 @@
 </div>
 
 <div class="footer">
-  <a href="index.html">bethrudden.ai</a> &middot; Denver, Colorado
+  <a href="index.html">bethrudden.ai</a> &middot; Denver, Colorado &middot; <a href="privacy.html">Privacy, cookies, and accessibility</a>
 </div>
 
+<script>
+  const inquiryForm = document.getElementById('inquiry-form');
+  if (inquiryForm) {
+    inquiryForm.addEventListener('input', function() {
+      if (typeof window.brTrack === 'function') {
+        window.brTrack('form_start', {
+          form_id: 'inquiry-form',
+          page_path: window.location.pathname,
+          transport_type: 'beacon'
+        });
+      }
+    }, { once: true });
+
+    inquiryForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(inquiryForm);
+      const data = Object.fromEntries(formData.entries());
+      const subjectContext = data.organization || data.name || 'bethrudden.ai';
+      const subject = `Fit check from ${subjectContext}`;
+      const body = [
+        `Name: ${data.name || ''}`,
+        `Email: ${data.email || ''}`,
+        `Organization: ${data.organization || ''}`,
+        `Role: ${data.role || ''}`,
+        `Conversation: ${data.conversation || ''}`,
+        `Timing: ${data.timeline || ''}`,
+        '',
+        'What are you trying to make true?',
+        data.challenge || ''
+      ].join('\n');
+
+      if (typeof window.brTrack === 'function') {
+        window.brTrack('form_submit', {
+          form_id: 'inquiry-form',
+          inquiry_type: data.conversation || '',
+          timeline: data.timeline || '',
+          page_path: window.location.pathname,
+          transport_type: 'beacon'
+        });
+        window.brTrack('generate_lead', {
+          method: 'fit_check_form',
+          inquiry_type: data.conversation || '',
+          timeline: data.timeline || '',
+          page_path: window.location.pathname,
+          transport_type: 'beacon'
+        });
+      }
+
+      const status = document.getElementById('form-status');
+      if (status) status.textContent = 'Opening your email app to send this to Meredith.';
+
+      window.setTimeout(function() {
+        window.location.href = `mailto:meredith@bast.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      }, 140);
+    });
+  }
+</script>
 </body>
 </html>

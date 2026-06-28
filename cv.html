@@ -5,51 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beth Rudden — CV & Track Record</title>
 <meta name="description" content="Operating record, public leadership, patents, and selected appearances for Beth Rudden, Founder &amp; CEO of Bast AI.">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL8JCB0PXZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-FL8JCB0PXZ');
-
-  document.addEventListener('click', function(event) {
-    const link = event.target.closest('a[href]');
-    if (!link) return;
-
-    const href = link.getAttribute('href') || '';
-    const url = new URL(href, window.location.href);
-    const linkText = (link.innerText || link.getAttribute('aria-label') || '').trim();
-    const eventBase = {
-      link_text: linkText,
-      link_url: link.href,
-      page_path: window.location.pathname
-    };
-
-    if (link.classList.contains('hero-cv') || link.classList.contains('cta-button') || link.classList.contains('outcome-request')) {
-      gtag('event', 'cta_click', eventBase);
-    }
-
-    if (url.protocol === 'mailto:') {
-      gtag('event', 'mailto_click', eventBase);
-      gtag('event', 'generate_lead', {
-        ...eventBase,
-        method: 'email_click'
-      });
-    }
-
-    if (url.pathname.toLowerCase().endsWith('.pdf')) {
-      gtag('event', 'file_download', {
-        ...eventBase,
-        file_name: url.pathname.split('/').pop()
-      });
-    }
-
-    if (url.hostname && url.hostname !== window.location.hostname) {
-      gtag('event', 'outbound_click', eventBase);
-    }
-  });
-</script>
+<script src="analytics-consent.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -74,6 +30,14 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid rgba(43,125,233,0.35);
+    outline-offset: 2px;
   }
 
   /* ── LAYOUT (split sidebar) ── */
@@ -362,7 +326,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
           Download PDF
         </a>
-        <a class="hero-cv-secondary" href="work.html">Work with me</a>
+        <a class="hero-cv-secondary" href="work.html#inquiry">Work with me</a>
       </div>
       <div class="social-row">
         <a href="https://linkedin.com/in/brudden" aria-label="LinkedIn" target="_blank" rel="noopener">
@@ -536,7 +500,7 @@
 </div>
 
 <div class="footer">
-  <a href="index.html">bethrudden.ai</a> &middot; Denver, Colorado
+  <a href="index.html">bethrudden.ai</a> &middot; Denver, Colorado &middot; <a href="privacy.html">Privacy, cookies, and accessibility</a>
 </div>
 
 </body>
