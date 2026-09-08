@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="beth-stage.jpg" type="image/jpeg">
-<title>Beth Rudden: Founder-led AI Advisory</title>
-<meta name="description" content="Premium founder-led AI advisory through Bast for executives and boards in high-integrity industries. Bast's operating focus is healthcare.">
-<meta property="og:title" content="Beth Rudden: Founder-led AI Advisory">
-<meta property="og:description" content="Bast is focused on healthcare. Beth reserves limited premium advisory capacity for consequential AI decisions in other high-integrity industries.">
+<title>Beth Rudden: Work With Me</title>
+<meta name="description" content="Founder-led AI advisory through Bast for healthcare and other high-integrity institutions ready to move beyond the hype and make consequential decisions well.">
+<meta property="og:title" content="Beth Rudden: Work With Me">
+<meta property="og:description" content="A trusted translator between technical reality and the boardroom, helping leaders make AI useful, defensible, and genuinely supportive of their people.">
 <meta property="og:type" content="profile">
 <script src="analytics-consent.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -436,11 +436,11 @@
     </div>
     <div class="hero-text">
       <a class="back" href="index.html">&larr; Beth Rudden</a>
-      <p class="eyebrow">Founder-led AI advisory</p>
+      <p class="eyebrow">Founder-led AI advisory through Bast</p>
       <h1>Work<br>With Me</h1>
-      <p class="thesis">Premium, direct access for leaders making AI decisions they have to explain, govern, and defend.</p>
+      <p class="thesis">A trusted translator between technical reality and the boardroom for leaders who are done with the hype and ready to make AI useful, defensible, and genuinely supportive of their people.</p>
       <div class="hero-actions">
-        <a class="hero-cv" href="#inquiry">Start the fit check <span class="arrow">&rarr;</span></a>
+        <a class="hero-cv" href="#inquiry">Start a conversation <span class="arrow">&rarr;</span></a>
         <a class="hero-cv-secondary" href="https://bast.ai/advisory/">Bast Advisory</a>
       </div>
       <div class="social-row">
@@ -461,8 +461,8 @@
   <div class="main">
 
     <!-- ═══════ THE FRAME ═══════ -->
-    <p class="frame"><strong>Bast is focused on healthcare.</strong> That is where we are building the product, concentrating the company, and choosing the institutions we can serve deeply.</p>
-    <p class="frame">I reserve limited, premium advisory capacity for executives and boards in other high-integrity industries. You get a trusted translator between technical reality and the boardroom—without turning Bast into a general-purpose consultancy.</p>
+    <p class="frame"><strong>AI went from experiment to board expectation overnight.</strong> Most leadership teams were left with five different answers on strategy and a hidden canyon of risk.</p>
+    <p class="frame"><strong>Bast is focused on healthcare.</strong> I also reserve limited founder-led advisory capacity for executives and boards in other high-integrity industries. You do not need another 80-page technical audit. You need someone who can protect your margins, reduce your liability exposure, and make sure AI supports your people instead of adding to their burnout.</p>
 
     <!-- ═══════ THE ARC ═══════ -->
     <div class="section-label">How the work unfolds</div>
@@ -617,7 +617,7 @@
           <label for="challenge">What are you trying to make true?</label>
           <textarea id="challenge" name="challenge" required></textarea>
         </div>
-        <button class="cta-button" type="submit">Send the fit check &rarr;</button>
+        <button class="cta-button" type="submit">Send a note &rarr;</button>
         <div class="form-status" id="form-status" aria-live="polite"></div>
       </form>
       <p class="terms"><a href="cv.html">Full CV</a> &nbsp;&middot;&nbsp; Selected engagements. Details and availability on request.</p>
@@ -649,7 +649,7 @@
       const formData = new FormData(inquiryForm);
       const data = Object.fromEntries(formData.entries());
       const subjectContext = data.organization || data.name || 'bethrudden.ai';
-      const subject = `Fit check from ${subjectContext}`;
+      const subject = `Website inquiry from ${subjectContext}`;
       const body = [
         `Name: ${data.name || ''}`,
         `Email: ${data.email || ''}`,
@@ -672,7 +672,7 @@
           transport_type: 'beacon'
         });
         window.brTrack('generate_lead', {
-          method: 'fit_check_form',
+          method: 'conversation_form',
           inquiry_type: data.conversation || '',
           timeline: data.timeline || '',
           page_path: window.location.pathname,
