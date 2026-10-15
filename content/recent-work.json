@@ -1,0 +1,149 @@
+{
+  "verified": "2026-10-15",
+  "items": [
+    {
+      "category": "Appearances",
+      "date": "2026-09-25",
+      "title": "Who Did the Work?",
+      "publisher": "WeAreDevelopers World Congress North America",
+      "url": "https://www.wearedevelopers.com/videos/100556-who-did-the-work?t=679",
+      "status": "Conference video listed by organizer",
+      "focus": "Sponsorship, developing talent, and human accountability as AI changes how work gets done."
+    },
+    {
+      "category": "Appearances",
+      "date": "2026-06-23",
+      "title": "Explainable AI with Beth Rudden CEO at Bast AI",
+      "publisher": "Trending in Education · Mike Palmer",
+      "url": "https://trendingineducation.com/2026/06/explainable-ai/",
+      "status": "Published podcast",
+      "focus": "Bast’s explainability architecture, Craig Hospital work, and the engineering choices behind trustworthy AI."
+    },
+    {
+      "category": "Appearances",
+      "date": "2026-04-11",
+      "title": "Human Wisdom and Better Leadership with Beth Rudden",
+      "publisher": "Authentic Ewe · Penelope Aiken",
+      "url": "https://shows.acast.com/authentic-ewe-podcast/episodes/human-wisdom-and-better-leadership-with-beth-rudden",
+      "status": "Published podcast",
+      "focus": "Leadership, values, reciprocity, and building systems that augment people."
+    },
+    {
+      "category": "Appearances",
+      "date": "2026-03-28",
+      "title": "Your data isn't exhaust. It's a belonging.",
+      "publisher": "Untangled · Charley Johnson",
+      "url": "https://podcasts.apple.com/us/podcast/your-data-isnt-exhaust-its-a-belonging/id1596588580?i=1000757943792",
+      "status": "Published podcast",
+      "focus": "Human context, provenance, and making institutional knowledge understandable."
+    },
+    {
+      "category": "Appearances",
+      "date": "2026-01-08",
+      "title": "Your AI Is Your Mirror, Not Your Oracle: How Heuristics Hijack Your Thinking",
+      "publisher": "Alistair Langer · Episode 72",
+      "url": "https://www.alistairlanger.com/podcast/72-your-ai-is-your-mirror-not-your-oracle-how-heuristics-hijack-your-thinking-with-beth-rudden",
+      "status": "Published podcast",
+      "focus": "Judgment, cognitive bias, and the relationship between people and AI."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-10-04",
+      "title": "Data is a belonging of human experience",
+      "publisher": "Ground Truth",
+      "url": "https://bastai.substack.com/p/data-is-a-belonging-of-human-experience",
+      "status": "Published essay",
+      "focus": "Bast’s fourth anniversary and the opening of its ontology manifesto; supporting caregivers through understandable information."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-10-03",
+      "title": "Field notes, early October 2026",
+      "publisher": "Ground Truth",
+      "url": "https://bastai.substack.com/p/field-notes-early-october-2026",
+      "status": "Published field notes",
+      "focus": "Ontology and knowledge-graph developments, connected to their underlying sources."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-10-02",
+      "title": "What Do People Do All Day - with AI?",
+      "publisher": "Ground Truth",
+      "url": "https://bastai.substack.com/p/what-do-people-do-all-day-with-ai",
+      "status": "Published essay",
+      "focus": "How management and working conditions shape whether AI helps people do more meaningful work."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-09-22",
+      "title": "It’s time to focus on the water",
+      "publisher": "Ground Truth",
+      "url": "https://bastai.substack.com/p/its-time-to-focus-on-the-water",
+      "status": "Published essay",
+      "focus": "The conditions that make care effective and the purpose behind Bast Care."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-09-12",
+      "title": "One Man Cannot Hold the Future",
+      "publisher": "Ground Truth",
+      "url": "https://bastai.substack.com/p/one-man-cannot-hold-the-future",
+      "status": "Published essay",
+      "focus": "Human judgment, institutions, and whose knowledge shapes AI’s future."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-07-23",
+      "title": "AI Will Become Ubiquitous. Human Judgment Will Not.",
+      "publisher": "Ground Truth",
+      "url": "https://bastai.substack.com/p/ai-will-become-ubiquitous-human-judgment",
+      "status": "Published essay",
+      "focus": "Leadership and the continuing importance of human judgment."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-06-23",
+      "title": "Moving From Adoption to Adaptation for Explainable AI",
+      "publisher": "Enterprise AI World · Crossing the AI Chasm",
+      "url": "https://www.enterpriseaiworld.com/Articles/Columns/Crossing-the-AI-Chasm/Moving-From-Adoption-to-Adaptation-for-Explainable-AI-175395.aspx",
+      "status": "Published column",
+      "focus": "Beth’s account of mobilizing people around trustworthy AI at IBM and creating the conditions for organizational change."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-03-19",
+      "title": "Why Data Products Break the Binary",
+      "publisher": "Enterprise AI World · Crossing the AI Chasm",
+      "url": "https://www.enterpriseaiworld.com/Articles/Columns/Crossing-the-AI-Chasm/Why-Data-Products-Break-the-Binary-173978.aspx",
+      "status": "Published column",
+      "focus": "Data products and enterprise AI."
+    },
+    {
+      "category": "Publications",
+      "date": "2026-01-09",
+      "title": "The Users We Didn’t Plan For",
+      "publisher": "Enterprise AI World · Crossing the AI Chasm",
+      "url": "https://www.enterpriseaiworld.com/Articles/Columns/Crossing-the-AI-Chasm/The-Users-We-Didnt-Plan-For-173023.aspx",
+      "status": "Published column",
+      "focus": "The people and use cases encountered beyond an AI system’s intended design."
+    },
+    {
+      "category": "Upcoming listings",
+      "date": "2026-11-18",
+      "title": "Explainability Is Infrastructure, Not a Feature",
+      "publisher": "Enterprise AI World 2026",
+      "url": "https://www.enterpriseaiworld.com/Conference/2025/Beth-Rudden.aspx",
+      "status": "Scheduled · 10:45–11:30 a.m.",
+      "focus": "Organizer’s profile lists this 2026 session despite retaining a 2025 URL and page footer."
+    },
+    {
+      "category": "Upcoming listings",
+      "date": "2026-11-19",
+      "title": "Closing Keynote: Knowledge Sharing, AI, & Enterprise Intelligence for Enterprise Success",
+      "publisher": "Enterprise AI World 2026",
+      "url": "https://www.enterpriseaiworld.com/Conference/2025/Beth-Rudden.aspx",
+      "status": "Scheduled · 4–5 p.m.",
+      "focus": "Future program listing, not a completed appearance."
+    }
+  ]
+}

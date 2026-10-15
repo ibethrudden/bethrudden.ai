@@ -56,8 +56,8 @@ def add_section(story,name):
             for item in node:
                 story.append(Paragraph(inline(item),styles['bullet'],bulletText='•'))
         elif cls=='featured-moment':
-            fields=[' '.join(x.itertext()).strip() for x in node if isinstance(x.tag,str)]
-            story.append(Paragraph(escape(clean(' | '.join(fields))),styles['compact']))
+            fields=[inline(x) for x in node if isinstance(x.tag,str)]
+            story.append(Paragraph(' | '.join(fields),styles['compact']))
         elif cls=='patent-group':
             for child in node:
                 if isinstance(child.tag,str): story.append(Paragraph(inline(child),styles['compact']))
@@ -69,7 +69,8 @@ def add_section(story,name):
 groups=[
  ['Executive Profile','The work in five outcomes','Professional Experience'],
  ['Board & Advisory','Patents, Publications & Open Technical Assets','Education & Credentials','IBM Appointments','Professional Certifications','Books'],
- ['Awards & Recognition','Writing & Expert Contributions','Policy & Public Accountability','Selected Keynotes & Public Leadership','Selected Podcasts & Interviews']
+ ['Writing & Expert Contributions','Selected Podcasts & Interviews'],
+ ['Awards & Recognition','Policy & Public Accountability','Selected Keynotes & Public Leadership','Upcoming Speaking']
 ]
 assert set(sum(groups,[]))==set(sections),(set(sections)-set(sum(groups,[])))
 story=[Paragraph('Beth Rudden',styles['name']),Paragraph('Business and technology executive<br/>Founder and CEO, Bast AI | IBM Distinguished Engineer | Board trustee',styles['deck']),Paragraph('Denver, Colorado | <a href="https://bethrudden.ai">bethrudden.ai</a> | <a href="mailto:beth@bast.ai">beth@bast.ai</a> | <a href="https://linkedin.com/in/brudden">LinkedIn</a>',styles['contact'])]
