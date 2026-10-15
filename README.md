@@ -18,3 +18,9 @@ This is a deliberately small, dependency-free static site hosted with GitHub Pag
 ## Development
 
 No build step is required. Open `index.html` in a browser or serve the directory with any static file server.
+
+## Career content and downloadable CV
+
+`content/career.json` records the leadership introduction, five career outcomes, and appointment language supplied by Beth on October 15, 2026. Keep the homepage and web CV aligned with this wording. IBM Distinguished Engineer is an appointment; do not qualify it as former. The five outcomes support the story of leading people and businesses rather than replacing it with a catalogue of metrics.
+
+After editing `cv.html`, regenerate the downloadable PDF with `python scripts/build_cv.py` using Python with `reportlab` and `lxml` installed. The builder reads the web CV so the public text and download stay consistent. Render and visually inspect the PDF before publishing.

@@ -1,0 +1,19 @@
+{
+  "updated": "2026-10-15",
+  "profile": "I build and lead teams that turn complex problems into systems people can understand, trust, and use. My background in anthropology and engineering shapes how I lead: understand the people and the mission, make the problem clear, and build the organization capable of solving it. I connect technical depth with business judgment to help institutions serve people better.",
+  "story": [
+    "Led IBM's workforce transformation, upskilling and reskilling 23,000 people in 16 months.",
+    "Created the data-science profession through which more than 10,000 data scientists have been certified globally.",
+    "Owned and grew two P&Ls by double digits, helping establish the foundation for AI at IBM.",
+    "Created technology spanning 27 issued IBM patents and five Bast patents.",
+    "Built Bast over four years, securing $1.5M in revenue and $750K in investment."
+  ],
+  "appointment": "IBM Distinguished Engineer, appointed 2016",
+  "patents": "27 issued IBM patents and five Bast patents",
+  "token_efficiency": "Bast architecture provides an AI system that uses 70–85% fewer tokens per interaction versus standard retrieval-augmented generation.",
+  "bast": [
+    "Founded Bast to build explainable AI for healthcare and other regulated institutions. Lead engineers and domain experts, giving each the authority to do their best work and setting the standards that connect them. Own client outcomes from scoping through production.",
+    "We build the knowledge layer underneath AI, structuring domain expertise so answers can be traced to evidence and unresolved terms are flagged. From BastCare to institutional deployments, our work helps people understand care and access expert knowledge in difficult environments.",
+    "Led Bast’s transition to agentic delivery, with human review of every change. Build the teams, partnerships, and evaluation practices needed to deliver dependable systems and sustain the business."
+  ]
+}
